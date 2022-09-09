@@ -58,6 +58,38 @@
     },
     "1661942566ab8ccfe5": {
       "type": "index-featured-products",
+      "blocks": {
+        "daf920e3-dc85-49ed-b015-91907bc36731": {
+          "type": "product",
+          "settings": {
+            "featured_product": "gods-country"
+          }
+        },
+        "995b571d-a5b3-4421-9e1f-938f0acae29f": {
+          "type": "product",
+          "settings": {
+            "featured_product": "in-light-in"
+          }
+        },
+        "176269ab-aac2-46b1-97d6-3c37050c25a5": {
+          "type": "product",
+          "settings": {
+            "featured_product": "self-sustained"
+          }
+        },
+        "ddae00c0-d535-4eab-8b78-5183d5afb3e9": {
+          "type": "product",
+          "settings": {
+            "featured_product": "little-blessings"
+          }
+        }
+      },
+      "block_order": [
+        "daf920e3-dc85-49ed-b015-91907bc36731",
+        "995b571d-a5b3-4421-9e1f-938f0acae29f",
+        "176269ab-aac2-46b1-97d6-3c37050c25a5",
+        "ddae00c0-d535-4eab-8b78-5183d5afb3e9"
+      ],
       "settings": {
         "featured_title": "Featured Products"
       }
