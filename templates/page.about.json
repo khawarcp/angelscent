@@ -1,14 +1,18 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
+    "banner": {
+      "type": "about-banner"
+    },
+    "angelscent" : {
+      "type" : "about-angelscent"
+    },
+    "candles" : {
+      "type" : "about-angelscent-candles"
     }
   },
   "order": [
-    "main"
+    "banner",
+    "angelscent",
+    "candles"
   ]
 }
