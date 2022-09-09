@@ -1094,6 +1094,10 @@ body.gradient {
     right: 0px;
     top: 0px;
     bottom: 0px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-banner-video {
@@ -1133,6 +1137,9 @@ a.featured-product-img img {
     height: 436px;
     object-fit: cover;
 }  
+
+
+
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
