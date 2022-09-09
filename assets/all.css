@@ -1117,6 +1117,11 @@ div#shopify-section-template--16427361435869__16627065667af38227 .featured-produ
     flex: 0 0 auto;
     width: 33.33333333%;
 }
+
+.form__message {
+    color: #828282;
+}
+
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
