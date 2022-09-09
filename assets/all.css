@@ -1099,6 +1099,10 @@ body.gradient {
     justify-content: center;
     align-items: center;
 }
+.cart-count-bubble{
+    bottom: 0.7rem;
+    left: 1.2rem;
+}
 
 .home-banner-video {
     width: 100%;
