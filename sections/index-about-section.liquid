@@ -13,7 +13,7 @@
                 <div class="col-md-6">
                     <div class="about-img">
                       {% if section.settings.image != blank %}
-                        <img src="{{ section.settings.image | img_url: 'master'}}" alt="{{ section.settings.image.alt }}">
+                        <img loading="lazy" src="{{ section.settings.image | img_url: 'master'}}" alt="{{ section.settings.image.alt }}">
                       {% else %}
                           {{ 'collection-4' | placeholder_svg_tag }}
                       {% endif %}

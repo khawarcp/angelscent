@@ -1,11 +1,8 @@
-<section class="angelscent-candle" style="background-image:url('https://cdn.shopify.com/s/files/1/0661/8379/0813/files/angelscent-bg.png?v=1662641474')">
+<section class="angelscent-candle" loading="lazy" style="background-image:url('{{  section.settings.image | img_url: 'master' }}')">
   <div class="container">
       <div class="angelscent-candle-text">
-          <h2>Angelscent Candles</h2>
-          <p>The candles are meant to be a direct representation of US!!! We are Light energy and we possess
-              something inside of ourselves that causes light and our ability to be lit just like a wick. We are a
-              lot like Candles which is the reason I have chosen and been chosen to help each of you find your
-              LIGHT!!!</p>
+          <h2> {{ section.settings.heading }} </h2>
+          <p>{{ section.settings.info }}</p>
       </div>
   </div>
 </section>
@@ -13,7 +10,22 @@
   {
     "name": "Angelscent Candle",
     "settings": [
-      
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Angelscent Candles"
+        },
+        {
+          "type": "textarea",
+          "id": "info",
+          "label": "About"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
     ],
     "presets":[
       {
