@@ -1,20 +1,27 @@
+{% assign product = all_products[section.settings.product] %}
   <section class="about-us self-sustained-main shop-in-light-in">
       <div class="container">
           <div class="row">
               <div class="col-md-6">
                   <div class="about-img">
-                      <img src="images/shop-in-light-in.png" alt="shop-in-light-in.png">
+                      <img laoding="lazy" src="{{ product.featured_image | img_url : 'master' }}" alt="{{ product.title }}">
                   </div>
               </div>
               <div class="col-md-6">
                   <div class="about-text-col">
-                      <h2>IN-LIGHT-IN</h2>
-                      <h4>$111.11</h4>
-                      <p>IN-Light-IN is for those times when you want to summon the light within. When it's time for you to just be with you!</p>
-                      <div class="shop-add-to-cart">
-                          <a href="#">Shop Now</a>
-                          <button class="add-to-cart">Add To Cart</button>
-                      </div>
+                      <h2>{{ product.title }}</h2>
+                      {% if product.compare_at_price > product.price %}
+                            <h4> {{ product.compare_at_price | money }} </h4>
+                        <h5>{{ product.price | money }}</h5>
+                    {% else %}
+                            <h4>{{ product.price | money }}</h4>
+                    {% endif %}
+                      <p> {{ product.description }} </p>
+                      <form action="/cart/add" method="post" class="shop-add-to-cart">
+                        <a href="{{ product.url }}">Shop Now</a>
+                        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id}}" />
+                        <button type="submit" class="add-to-cart">Add To Cart</button>
+                    </form>
                   </div>
               </div>
           </div>
