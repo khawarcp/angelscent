@@ -74,14 +74,14 @@
                     <ul class="find-us">
                       {% if section.settings.address != blank %}
                         <li>
-                            <img src="images/address-icon.png" alt="address-icon">
+                            <img src="{{ 'address-icon.png' | asset_img_url : "master" }}" alt="address-icon">
                             <span>{{ section.settings.address }}</span>
                         </li
                         {% endif %}
                           {% if section.settings.phone != blank %}
                         <li>
                             <a href="tel:{{ section.settings.phone }}">
-                                <img src="images/phone-icon.png" alt="address-icon">
+                                <img src="{{ 'phone-icon.png' | asset_img_url : "master" }}" alt="address-icon">
                                 <span>{{ section.settings.phone }}</span>
                             </a>
                         </li>
@@ -89,7 +89,7 @@
                       {% if section.settings.email != blank %}
                         <li>
                             <a href="mailto:{{ section.settings.email }}">
-                                <img src="images/bill-sanders-img.png" alt="address-icon">
+                                <img src="{{ 'bill-sanders-img.png' | asset_img_url : "master" }}" alt="address-icon">
                                 <span>{{ section.settings.email }}</span>
                             </a>
                         </li>
@@ -97,7 +97,7 @@
                       {% if section.settings.email_2 != blank %}
                         <li>
                             <a href="mailto:{{ section.settings.email_2 }}">
-                                <img src="images/bill-sanders-img2.png" alt="address-icon">
+                                <img src="{{ 'bill-sanders-img2.png' | asset_img_url : "master" }}" alt="address-icon">
                                 <span>{{ section.settings.email_2 }}</span>
                             </a>
                         </li>
