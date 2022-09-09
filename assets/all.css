@@ -1109,7 +1109,14 @@ body.gradient {
 .home-banner {
     height: 100vh;
 }
+div#shopify-section-template--16427361435869__16627065667af38227 .featured-products .container {
+    max-width: 920px;
+}
 
+div#shopify-section-template--16427361435869__16627065667af38227 .featured-products .container .col-md-3 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
