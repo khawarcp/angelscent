@@ -1,45 +1,32 @@
 <section class="about-us self-sustained-main">
     <div class="container">
+        {% for block in section.blocks %}
+            {% assign product = all_products[block.settings.featured_product] %}
         <div class="row">
             <div class="col-md-6">
                 <div class="about-img">
-                    <img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/self-sustained-img.png?v=1662641910" alt="self-sustained-img">
+                    <img laoding="lazy" src="{{ product.featured_image | img_url : 'master' }}" alt="{{ product.title }}">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="about-text-col">
-                    <h2>Self Sustained</h2>
-                    <h4>$111.11</h4>
-                    <p>This set is to remind you that you are always self sustained! Like this set, composed of
-                        recycled food cans, soy wax, scented by essential oils inside a beautiful unstained wood
-                        box.</p>
-                    <div class="shop-add-to-cart">
-                        <a href="shop.html">Shop Now</a>
-                        <button class="add-to-cart">Add To Cart</button>
-                    </div>
+                    <h2>{{ product.title }}</h2>
+                    {% if product.compare_at_price > product.price %}
+                            <h4> {{ product.compare_at_price | money }} </h4>
+                        <h5>{{ product.price | money }}</h5>
+                    {% else %}
+                            <h4>{{ product.price | money }}</h4>
+                    {% endif %}
+                    <p> {{ product.description }} </p>
+                    <form action="/cart/add" method="post" class="shop-add-to-cart">
+                        <a href="{{ product.url }}">Shop Now</a>
+                        <input type="hidden" name="id" value="{{ product.product.selected_or_first_available_variant.id}}" />                        }}"
+                        <button type="submit" class="add-to-cart">Add To Cart</button>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="about-img">
-                    <img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/gods-gift-img.png?v=1662641949" alt="gods-gift-img">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="about-text-col">
-                    <h2>Gods Gift</h2>
-                    <h4>$111.11</h4>
-                    <p>Use Gods gift soy wax candle set when you need to uplift & ground yourself. Submerge your
-                        atmosphere in the essence of Ylang Ylang to boost your mood while the aroma of Cinnamon &
-                        sweet orange engulfs the space you occupy.</p>
-                    <div class="shop-add-to-cart">
-                        <a href="shop.html">Shop Now</a>
-                        <button class="add-to-cart">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </section>
 
@@ -50,6 +37,21 @@
   {
     "name": "Self Sustained Gods Gift",
     "settings": [],
+    "blocks":
+    [
+        {
+            "name" : "Product",
+            "type": "product",
+            "settings":
+            [   
+               {
+                "type": "product",
+                "id": "featured_product",
+                "label": "Product"        
+               }
+            ]
+        }
+    ],
     "presets":[
       {
         "name":"Self Sustained  Gods Gift",
