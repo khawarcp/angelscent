@@ -1441,4 +1441,8 @@ div#shopify-section-template--16427361435869__16627065667af38227 .featured-produ
     .about-us.self-sustained-main.shop-in-light-in .row {
         margin-bottom: 40px;
     }
+  .home-banner-video video {
+    height: 500px;
+}
+
 }
