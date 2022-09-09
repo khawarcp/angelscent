@@ -74,24 +74,24 @@
                     <ul class="find-us">
                         <li>
                             <img src="images/address-icon.png" alt="address-icon">
-                            <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+                            <span>{{ section.settings.contact_heading }}</span>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="images/phone-icon.png" alt="address-icon">
-                                <span>(239) 555-0108</span>
+                                <span>{{ section.settings.contact_heading }}</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="images/bill-sanders-img.png" alt="address-icon">
-                                <span>bill.sanders@example.com</span>
+                                <span>{{ section.settings.contact_heading }}</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="images/bill-sanders-img2.png" alt="address-icon">
-                                <span>bill.sanders@example.com</span>
+                                <span>{{ section.settings.contact_heading }}</span>
                             </a>
                         </li>
                     </ul>
@@ -156,6 +156,11 @@
         "type" : "text",
           "id" : "email_2",
           "label": "Secondary Email Address"
+      },
+      {
+        "type" : "html",
+          "id" : "map",
+          "label": "Map"
       }
   ],
   "presets": [
