@@ -95,8 +95,103 @@
 
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Footer",
+    "settings": 
+    [
+       {
+        "type": "image_picker",
+        "id": "background",
+        "label": "Background Image"
+       },
+      {
+        "type": "image_picker",
+        "id": "footer_log",
+        "label": "Logo"
+      },
+     {
+        "type": "textarea",
+        "id": "info",
+        "label": "About"
+     },
+       {
+        "type": "text",
+        "id": "owner",
+        "label": "Author"
+       },
+        {
+            "type": "header",
+            "content": "Menus"
+        },
+       {
+        "type": "text",
+        "id": "menu_title_1",
+        "label": "Heading"
+       },
+        {
+            "type": "link_list",
+            "id": "menu_1",
+            "label": "Menu"
+        },
+        {
+         "type": "text",
+         "id": "menu_title_2",
+         "label": "Heading"
+        },
+         {
+             "type": "link_list",
+             "id": "menu_2",
+             "label": "Menu"
+         },
+         {
+          "type": "text",
+          "id": "menu_title_3",
+          "label": "Heading"
+         },
+          {
+              "type": "link_list",
+              "id": "menu_3",
+              "label": "Menu"
+          },
+          {
+              "type": "header",
+              "content": "Newsletter"
+          },
+         {
+          "type": "text",
+          "id": "news_heading",
+          "label": "Heading"
+         },
+          {
+              "type": "text",
+              "id": "subheading",
+              "label": "Subheading"
+          },
+          {
+              "type": "header",
+              "content": "Opening Time"
+          },
+         {
+          "type": "text",
+          "id": "open_heading",
+          "label": "Heading"
+         },
+          {
+              "type": "text",
+              "id": "day_1",
+              "label": "Time"
+          },
+          {
+              "type": "text",
+              "id": "day_2",
+              "label": "Time"
+          },
+          {
+              "type": "text",
+              "id": "day_3",
+              "label": "Time"
+          }
+
+    ]
   }
 {% endschema %}
 
