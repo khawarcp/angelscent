@@ -1117,6 +1117,22 @@ div#shopify-section-template--16427361435869__16627065667af38227 .featured-produ
     flex: 0 0 auto;
     width: 33.33333333%;
 }
+a.featured-product-img img {
+    width: 100%;
+    height: 344px;
+    border-radius: 16px;
+}
+a.featured-product-img img {
+    width: 100%;
+    height: 344px;
+    border-radius: 16px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 436px;
+    object-fit: cover;
+}  
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
@@ -1452,20 +1468,5 @@ section.home-banner {
     min-height: 400px;
     height: 65vh;
 }
-a.featured-product-img img {
-    width: 100%;
-    height: 344px;
-    border-radius: 16px;
-}
-a.featured-product-img img {
-    width: 100%;
-    height: 344px;
-    border-radius: 16px;
-}
 
-.about-img img {
-    width: 100%;
-    height: 436px;
-    object-fit: cover;
-}  
 }
