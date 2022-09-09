@@ -93,8 +93,7 @@
     </section>
 
 
-
-
+{% comment%}
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -188,7 +187,7 @@
     {%- endform -%}
   </div>
 </div>
-
+{%   endcomment %}
 {% schema %}
 {
   "name": "t:sections.contact-form.name",
