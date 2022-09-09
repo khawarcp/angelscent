@@ -1,0 +1,84 @@
+<section class="home-banner">
+    <div class="container">
+        <div class="home-text animate__animated animate__zoomIn">
+            <h1>{{ section.settings.banner_title }}</h1>
+            <p>{{ section.settings.banner_subtitle }}</p>
+            <div class="home-text-btns">
+                <a href="{{ section.settings.shop_button_link }}">{{ section.settings.shop_button_text }}</a>
+                <a href="{{ section.settings.learn_button_link }}">{{ section.settings.Learn_button_text }}</a>
+            </div>
+        </div>
+        <div class="arrow-down">
+            <a href="#welcome-anglescent"><img src="{{ 'arrow-down.png' | file_img_url:'master' }}" alt="arrow-down"></a>
+        </div>
+    </div>
+  <div class="home-banner-video">
+    <video muted autoplay playsinline preload="auto">
+        <source src="https://cdn.shopify.com/videos/c/o/v/0e8e38fdc3c34e3a9bd35a75573a6826.mov" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+
+
+
+{% schema %}
+  {
+    "name": "Banner",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id":"banner_img",
+          "label":"Banner Image"
+          
+        },
+      {
+        "type":"text",
+        "id":"banner_title",
+        "label":"Title",
+        "default":"Welcome To Angelscent"
+      },
+      {
+        "type":"text",
+        "id":"banner_subtitle",
+        "label":"Subtitle",
+        "default": "We are Light energy & we possess something inside of ourselves that causes light & our ability to be lit just like a wick."
+      },
+      {
+        "type":"text",
+        "id":"shop_button_text",
+        "label":"Button Text",
+        "default":"Shop Now"
+      },
+      {
+        "type":"url",
+        "id":"shop_button_link",
+        "label":"Button Link"
+      },
+      {
+        "type":"text",
+        "id":"Learn_button_text",
+        "label":"Button Text",
+        "default":"Learn More"
+      },
+      {
+        "type":"url",
+        "id":"learn_button_link",
+        "label":"Button Link"
+      }
+    ],
+    "presets":
+  [
+         {
+            "name" : "Banner",
+            "category" : "Custom Sections"
+         }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

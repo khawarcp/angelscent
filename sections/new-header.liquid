@@ -1,0 +1,78 @@
+<header>
+  <div class="container">
+      <div class="main-header">
+          <div class="header-row">
+              <div class="left-menu">
+                  <ul>
+                    {% for link in linklists[section.settings.left_menu].links %}
+                      <li class="{% if link.active %}active{% endif %}">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+              </div>
+              <div class="right-menu">
+                  <ul>
+                    {% for link in linklists[section.settings.right_menu].links %}
+                      <li class="{% if link.active %}active{% endif %}">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                  <div class="cart-search-icons">
+                      <ul>
+                          <li><a href="#"><img src="{{ 'cart-icon.png' | asset_img_url: 'master' }}" alt="cart-icon"></a></li>
+                          <li><a href="#"><img src="{{ 'search-icon.png' | asset_img_url: 'master' }}" alt="search-icon"></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="logo">
+              <a href="{{ routes.root_url }}">
+                {%  if section.settings.logo != blank %}
+                <img src="{{section.settings.logo | img_url: 'master'}}" loading="lazy" alt="{{ shop.name }}">
+                {% else %}
+                   <span class="h2">{{ shop.name }}</span>
+                {% endif %}
+              </a>
+          </div>
+          <div class="menu-bar d-none">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </div>
+  </div>
+</header>
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Main Header"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      },
+      {
+        "type": "link_list",
+        "id": "left_menu",
+        "label": "Left Menu"
+      },
+      {
+        "type":"link_list",
+        "id":"right_menu",
+        "label": "Right Menu"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

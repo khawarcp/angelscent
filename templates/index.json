@@ -1,0 +1,90 @@
+{
+  "sections": {
+    "1661851811e3d299d7": {
+      "type": "index-banner",
+      "settings": {
+        "banner_img": "shopify:\/\/shop_images\/home-banner.png",
+        "banner_title": "Welcome To Angelscent",
+        "banner_subtitle": "We are Light energy & we possess something inside of ourselves that causes light & our ability to be lit just like a wick.",
+        "shop_button_text": "Shop Now",
+        "shop_button_link": "",
+        "Learn_button_text": "Learn More",
+        "learn_button_link": ""
+      }
+    },
+    "16618560351b397649": {
+      "type": "index-welcome-angelscent",
+      "settings": {
+        "welcome_title": "Welcome To Angelscent",
+        "welcome_subtitle": "Angelscent Candles has accepted the \"calling\" to becoming a constant reminder to humans, that while your busy \"being\" human that you are also light! Our candles provide a natural source of energy along with essentials of love and so do YOU!",
+        "index_product1": "little-blessings",
+        "index_product2": "in-light-in"
+      }
+    },
+    "1661939458fadb76a1": {
+      "type": "index-most-viewed-products",
+      "blocks": {
+        "0dfdecb4-e1db-412b-971e-e7b605620582": {
+          "type": "Products",
+          "settings": {
+            "product_name": "Little Blessing",
+            "product_url": "shopify:\/\/products\/little-blessings"
+          }
+        },
+        "a996af92-4c52-4718-bb5c-486be9df40f7": {
+          "type": "Products",
+          "settings": {
+            "product_name": "IN-Light-In",
+            "product_url": "shopify:\/\/products\/in-light-in"
+          }
+        },
+        "c1700f37-5548-49a2-a1af-be4a9b4be4c5": {
+          "type": "Products",
+          "settings": {
+            "product_name": "Gods Country",
+            "product_url": "shopify:\/\/products\/gods-country"
+          }
+        }
+      },
+      "block_order": [
+        "0dfdecb4-e1db-412b-971e-e7b605620582",
+        "a996af92-4c52-4718-bb5c-486be9df40f7",
+        "c1700f37-5548-49a2-a1af-be4a9b4be4c5"
+      ],
+      "settings": {
+        "viewed_product_title": "Most Viewed Products",
+        "background_image": "shopify:\/\/shop_images\/most-viewed-bg.png"
+      }
+    },
+    "1661942566ab8ccfe5": {
+      "type": "index-featured-products",
+      "settings": {
+        "featured_title": "Featured Products"
+      }
+    },
+    "1662537228c0262bdc": {
+      "type": "index-about-section",
+      "settings": {
+      }
+    },
+    "16626415596c0f2397": {
+      "type": "index-angelscent-candle",
+      "settings": {
+      }
+    },
+    "1662641887cc603b45": {
+      "type": "self-sustained-gods-gifts",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1661851811e3d299d7",
+    "16618560351b397649",
+    "1661939458fadb76a1",
+    "1661942566ab8ccfe5",
+    "1662537228c0262bdc",
+    "16626415596c0f2397",
+    "1662641887cc603b45"
+  ]
+}

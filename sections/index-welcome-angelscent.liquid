@@ -1,0 +1,73 @@
+<section class="welcome-anglescent" id="welcome-anglescent">
+    <div class="container">
+        <div class="welcome-top-text">
+            <h2>{{ section.settings.welcome_title }}</h2>
+            <p>{{ section.settings.welcome_subtitle }}</p>
+        </div>
+        <div class="row">
+          {% assign pro = all_products[section.settings.index_product1] %}
+            <div class="col-md-6">
+                <div class="welcome-img-text-col" style="background-image: url('{{ pro.featured_image | img_url:'master' }}')">
+                    <div class="welcome-text">
+                        <h2>{{ pro.title }}</h2>
+                        <a href="{{ pro.url }}">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+          {% assign pro = all_products[section.settings.index_product2] %}
+            <div class="col-md-6">
+                <div class="welcome-img-text-col" style="background-image: url('{{ pro.featured_image | img_url:'master' }}')">
+                    <div class="welcome-text">
+                        <h2>{{ pro.title }}</h2>
+                        <a href="{{ pro.url }}">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Welcome Angelscent",
+    "settings": [
+      {
+        "type":"text",
+        "id":"welcome_title",
+        "label":"Title",
+        "default":"Welcome To Angelscent"
+      },
+      {
+        "type":"text",
+        "id":"welcome_subtitle",
+        "label":"Subtitle",
+        "default":"Angelscent Candles has accepted the 'calling' to becoming a constant reminder to humans, that while your busy 'being' human that you are also light! Our candles provide a natural source of energy along with essentials of love and so do YOU!"
+      },
+      {
+        "type":"product",
+        "id":"index_product1",
+        "label":"Add Prouct"
+      },
+      {
+        "type":"product",
+        "id":"index_product2",
+        "label":"Add Prouct"
+      }
+      
+    ],
+        "presets":
+  [
+         {
+            "name" : "Welcome Angelscent",
+            "category" : "Custom Sections"
+         }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

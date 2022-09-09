@@ -1,0 +1,68 @@
+<section class="most-viewed-product-sec">
+  <div class="container">
+    <div class="most-viewed-product" style="background-image: url('{{ section.settings.background_image | img_url : 'master' }}');">
+      <div class="most-viewed-text">
+          <h2>{{ section.settings.viewed_product_title }}</h2>
+          <ul>
+            {% for block in section.blocks %}
+              <li><a href="{{ block.settings.product_url }}">{{ block.settings.product_name }}</a></li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Viewed Products",
+    "settings": [
+      {
+        "type":"text",
+        "id":"viewed_product_title",
+        "label":"Title",
+        "default":"Most Viewed Products"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      }
+    ],
+    "blocks" :
+  [
+        {
+           "name": "Most Viewed Product",
+           "type" : "Products",
+           "limit" : 3,
+           "settings":
+           [
+               {
+                   "type": "text",
+                   "id": "product_name",
+                   "label": "Product Name"
+               },
+               {
+                   "type": "url",
+                   "id": "product_url",
+                   "label": "URL"
+               }
+           ]
+        }
+  ],
+    "presets":
+    [
+      {
+        "name": "Viewed Products",
+        "category":"Custom Sections"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
