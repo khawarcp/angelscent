@@ -1,49 +1,75 @@
-<footer style="background-image: url('https://cdn.shopify.com/s/files/1/0661/8379/0813/files/footer-bg.png?v=1662642116')">
+<footer loading="lazy" style="background-image: url('{{ section.settings.background | img_url : 'master' }}')">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="logo-text-col">
                     <a href="index.html" class="footer-logo">
-                        <img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/footer-logo.png?v=1662642191" alt="footer-logo">
+                        <img loading="lazy" src="{{ section.settings.footer_log | img_url : 'master' }}" alt="{{ shop.name }}">
                     </a>
-                    <p>“The need for connection and community is primal, as fundamental as the need for air, water,
-                        and food.”</p>
-                    <h4>– Dean Ornish</h4>
+                    <p> {{  section.settings.info }} </p>
+                    <h4>{{  section.settings.owner }}</h4>
                 </div>
             </div>
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="quicks-link-col">
-                            <h5>Quick Links</h5>
+                            <h5> {{ section.settings.menu_title_1 }} </h5>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#">Order Tracking</a></li>
+                                {% for link in linklists[section.settings.menu_1].links %}
+                                <li><a href="{{ link.url }}"> {{ link.title }} </a></li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-6 f-newsletter-col
-                    ">
+                    <div class="col-md-8 col-lg-6 f-newsletter-col">
                         <div class="newsletter-text-social-col">
-                            <h5>Newsletter</h5>
-                            <p>Subscribe to our sales newsletter to stay up to date with our latest products &
-                                services</p>
-                            <form>
+                            <h5> {{ section.settings.news_heading }} </h5>
+                            <p> {{ section.settings.subheading }} </p>
+                            {% form 'customer' %}
+                                <input type="hidden" name="contact[tags]" value="newsletter">
                                 <div class="newsletter-form">
                                     <div class="input-news">
-                                        <input type="email" placeholder="Email Address">
+                                        <input
+                                            id="NewsletterForm--{{ section.id }}"
+                                            type="email"
+                                            name="contact[email]"
+                                            value="{{ form.email }}"
+                                            aria-required="true"
+                                            autocorrect="off"
+                                            autocapitalize="off"
+                                            autocomplete="email"
+                                            {% if form.errors %}
+                                            autofocus
+                                            aria-invalid="true"
+                                            aria-describedby="Newsletter-error--{{ section.id }}"
+                                            {% elsif form.posted_successfully? %}
+                                            aria-describedby="Newsletter-success--{{ section.id }}"
+                                            {% endif %}
+                                            placeholder="{{ 'newsletter.label' | t }}"
+                                            required
+                                        >
                                         <input type="submit" value="Subscribe">
+                                        {%- if form.errors -%}
+                                        <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                                        {%- endif -%}
                                     </div>
+                                    {%- if form.posted_successfully? -%}
+                                        <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+                                    {%- endif -%}
                                 </div>
-                            </form>
+                            {% endform %}
                             <div class="f-social-links">
                                 <ul>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    {% if section.settings.social_facebook_link != blank %}
+                                    <li><a href="{{ section.settings.social_facebook_link }}"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    {% endif %}
+                                    {% if section.settings.social_twitter_link != blank %}
+                                    <li><a href="{{ section.settings.social_twitter_link }}"><i class="fa-brands fa-twitter"></i></a></li>
+                                    {% endif %}
+                                    {% if section.settings.social_instagram_link != blank %}
+                                    <li><a href="{{ section.settings.social_instagram_link }}"><i class="fa-brands fa-instagram"></i></a></li>
+                                    {% endif %}
                                 </ul>
                             </div>
                         </div>
@@ -52,31 +78,31 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="quicks-links">
-                            <h5>Opening Time</h5>
+                            <h5> {{ section.settings.open_heading }} </h5>
                             <ul>
-                                <li>Mon - Fri: 8AM - 10PM</li>
-                                <li>Sat: 9AM-8PM</li>
-                                <li>Sun: Closed</li>
+                                <li> {{ section.settings.day_1 }} </li>
+                                <li> {{ section.settings.day_2 }} </li>
+                                <li> {{ section.settings.day_3 }} </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="quicks-links">
-                            <h5>Quick Links</h5>
+                            <h5> {{ section.settings.menu_title_2 }} </h5>
                             <ul>
-                                <li><a href="#">God’s Country</a></li>
-                                <li><a href="#">In-Light-In</a></li>
-                                <li><a href="#">Little blessings</a></li>
+                                {% for link in linklists[section.settings.menu_2].links %}
+                                <li><a href="{{ link.url }}"> {{ link.title }} </a></li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="quicks-links">
-                            <h5>Information</h5>
+                            <h5>{{ section.settings.menu_title_3 }}</h5>
                             <ul>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Refund Policy</a></li>
-                                <li><a href="#">Terms of Service</a></li>
+                                {% for link in linklists[section.settings.menu_3].links %}
+                                <li><a href="{{ link.url }}"> {{ link.title }} </a></li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
@@ -86,7 +112,7 @@
     </div>
     <div class="copywrite-text">
         <div class="container">
-            <p>Copyright © 2019 AngelScentC All rights reserved.</p>
+            <p>Copyright &copy; {{ 'now' | date: '%Y' }} {{ shop.name }} All rights reserved.</p>
         </div>
     </div>
 </footer>
