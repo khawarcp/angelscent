@@ -1,25 +1,48 @@
-    <section class="about-us shop-about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about-img">
-                        <img src="images/about-img.png" alt="about-img">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="about-text-col">
-                        <h2>Angelscent</h2>
-                        <p>Angelscent Candles has accepted the "calling" to becoming a constant reminder to humans, that while your busy "being" human that you are also light! Our candles provide a natural source of energy along with essentials of love and so do YOU!</p>
-                        <p>Angelscent Candles are meant to be a direct representation of us.  All of our candles come inside of a solid woodbox, which for Angelscent represents the body with the light inside, so if you haven't realized this, we want to help you find that light and help you get Lit!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="about-us shop-about-us">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="about-img">
+                      <img src="images/about-img.png" alt="about-img">
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="about-text-col">
+                      <h2></h2>
+                      <p>Angelscent Candles has accepted the "calling" to becoming a constant reminder to humans, that while your busy "being" human that you are also light! Our candles provide a natural source of energy along with essentials of love and so do YOU!</p>
+                      <p>Angelscent Candles are meant to be a direct representation of us.  All of our candles come inside of a solid woodbox, which for Angelscent represents the body with the light inside, so if you haven't realized this, we want to help you find that light and help you get Lit!</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "About Us",
+    "settings": 
+      [
+          {
+            "type" : "text",
+            "id" : "heading",
+              "label": "Heading",
+              "default": "Angelscent"
+          },
+           {
+            "type" : "textarea",
+            "id" : "info_1",
+              "label": "Description"
+          },
+           {
+            "type" : "textarea",
+            "id" : "info_2",
+              "label": "Description"
+          },
+           {
+            "type" : "image_picker",
+            "id" : "image",
+              "label": "Image"
+          }
+      ]
   }
 {% endschema %}
 
