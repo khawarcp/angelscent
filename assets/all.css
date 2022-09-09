@@ -1142,7 +1142,9 @@ a.featured-product-img img {
     object-fit: cover;
 }  
 
-
+ul.find-us > a {
+    display: none;
+}
 
 @media screen and (max-width:1199px){
     .home-banner {
