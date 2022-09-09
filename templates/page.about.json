@@ -1,13 +1,19 @@
 {
   "sections": {
     "banner": {
-      "type": "about-banner"
+      "type": "about-banner",
+      "settings": {
+      }
     },
-    "angelscent" : {
-      "type" : "about-angelscent"
+    "angelscent": {
+      "type": "about-angelscent",
+      "settings": {
+      }
     },
-    "candles" : {
-      "type" : "about-angelscent-candles"
+    "candles": {
+      "type": "about-angelscent-candles",
+      "settings": {
+      }
     }
   },
   "order": [

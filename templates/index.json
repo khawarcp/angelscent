@@ -112,78 +112,6 @@
         "image": "shopify:\/\/shop_images\/angelscent-bg.png"
       }
     },
-    "1662703372a4cab8a7": {
-      "type": "featured-product",
-      "blocks": {
-        "16627033727ff03ca3-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "16627033727ff03ca3-1": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "16627033727ff03ca3-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "16627033727ff03ca3-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "16627033727ff03ca3-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "16627033727ff03ca3-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "16627033727ff03ca3-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "16627033727ff03ca3-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "16627033727ff03ca3-0",
-        "16627033727ff03ca3-1",
-        "16627033727ff03ca3-2",
-        "16627033727ff03ca3-3",
-        "16627033727ff03ca3-4",
-        "16627033727ff03ca3-5",
-        "16627033727ff03ca3-6",
-        "16627033727ff03ca3-7"
-      ],
-      "settings": {
-        "product": "self-sustained",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1662641887cc603b45": {
       "type": "self-sustained-gods-gifts",
       "settings": {
@@ -197,7 +125,6 @@
     "1661942566ab8ccfe5",
     "1662537228c0262bdc",
     "16626415596c0f2397",
-    "1662703372a4cab8a7",
     "1662641887cc603b45"
   ]
 }
