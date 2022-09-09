@@ -5,6 +5,11 @@
       "settings": {
       }
     },
+    "about": {
+      "type": "shop-about-us",
+      "settings": {
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -32,6 +37,7 @@
   },
   "order": [
     "banner",
+    "about",
     "product-grid",
     "featured"
   ]
