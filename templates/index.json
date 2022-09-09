@@ -114,6 +114,24 @@
     },
     "1662641887cc603b45": {
       "type": "self-sustained-gods-gifts",
+      "blocks": {
+        "501f561a-0736-4c77-9f75-9ada1fd0184d": {
+          "type": "product",
+          "settings": {
+            "featured_product": "self-sustained"
+          }
+        },
+        "b4065f84-d93b-40be-955d-443eefb0eb84": {
+          "type": "product",
+          "settings": {
+            "featured_product": "gods-country"
+          }
+        }
+      },
+      "block_order": [
+        "501f561a-0736-4c77-9f75-9ada1fd0184d",
+        "b4065f84-d93b-40be-955d-443eefb0eb84"
+      ],
       "settings": {
       }
     }
