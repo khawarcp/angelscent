@@ -78,14 +78,7 @@
                             <span>{{ section.settings.address }}</span>
                         </li
                         {% endif %}
-                        {% if section.settings.phone != blank %}
-                        <li>
-                           <a href="tel:{{ section.settings.phone }}">
-                                    <img src="{{ 'phone-icon.png' | asset_img_url : "master" }}" alt="address-icon">
-                                    <span>{{ section.settings.phone }}</span>
-                                </a>
-                        </li>
-                          {% endif %}
+
                           
                             <li>
                                 <a href="tel:{{ section.settings.phone }}">
