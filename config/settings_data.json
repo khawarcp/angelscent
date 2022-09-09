@@ -184,6 +184,27 @@
           "left_menu": "main-menu",
           "right_menu": "right-menu"
         }
+      },
+      "new-footer": {
+        "type": "new-footer",
+        "settings": {
+          "background": "shopify:\/\/shop_images\/footer-bg.png",
+          "footer_log": "shopify:\/\/shop_images\/footer-logo.png",
+          "info": "“The need for connection and community is primal, as fundamental as the need for air, water, and food.”",
+          "owner": "– Dean Ornish",
+          "menu_title_1": "Quick Links",
+          "menu_1": "",
+          "menu_title_2": "Quick Links",
+          "menu_2": "",
+          "menu_title_3": "Information",
+          "menu_3": "",
+          "news_heading": "Newsletter",
+          "subheading": "Subscribe to our sales newsletter to stay up to date with our latest products & services",
+          "open_heading": "Opening Time",
+          "day_1": "Mon - Fri: 8AM - 10PM",
+          "day_2": "Sat: 9AM-8PM",
+          "day_3": "Sun: Closed"
+        }
       }
     },
     "content_for_index": [
