@@ -29,10 +29,38 @@
                                 <input type="tel" id="ContactForm-phone" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
                             </div>
                             <div class="input-container">
-                                <input type="email" placeholder="Your Email Address">
+                              <input
+                                autocomplete="email"
+                                type="email"
+                                id="ContactForm-email"
+                                name="contact[email]"
+                                spellcheck="false"
+                                autocapitalize="off"
+                                value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                                aria-required="true"
+                                {% if form.errors contains 'email' %}
+                                  aria-invalid="true"
+                                  aria-describedby="ContactForm-email-error"
+                                {% endif %}
+                                placeholder="{{ 'templates.contact.form.email' | t }}"
+                              >
+                              <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
+                              {%- if form.errors contains 'email' -%}
+                                <small class="contact__field-error" id="ContactForm-email-error">
+                                  <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                                  <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+                                </small>
+                              {%- endif -%}
                             </div>
                             <div class="input-container">
-                                <textarea placeholder="Your Message"></textarea>
+                              <textarea
+                              rows="10"
+                              id="ContactForm-body"
+                              name="contact[{{ 'templates.contact.form.comment' | t }}]"
+                              placeholder="{{ 'templates.contact.form.comment' | t }}"
+                            >
+                              {{- form.body -}}
+                            </textarea>
                             </div>
                             <div class="input-submit">
                                 <input type="submit" value="Submit">
