@@ -42,7 +42,7 @@
           "type": "Products",
           "settings": {
             "product_name": "Gods Country",
-            "product_url": "shopify:\/\/products\/gods-country"
+            "product_url": "shopify:\/\/products\/gods-gift"
           }
         }
       },
@@ -62,7 +62,7 @@
         "daf920e3-dc85-49ed-b015-91907bc36731": {
           "type": "product",
           "settings": {
-            "featured_product": "gods-country"
+            "featured_product": "gods-gift"
           }
         },
         "995b571d-a5b3-4421-9e1f-938f0acae29f": {
@@ -124,7 +124,7 @@
         "b4065f84-d93b-40be-955d-443eefb0eb84": {
           "type": "product",
           "settings": {
-            "featured_product": "gods-country"
+            "featured_product": "gods-gift"
           }
         }
       },
