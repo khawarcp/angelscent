@@ -20,7 +20,7 @@
                     <p> {{ product.description }} </p>
                     <form action="/cart/add" method="post" class="shop-add-to-cart">
                         <a href="{{ product.url }}">Shop Now</a>
-                        <input type="hidden" name="id" value="{{ product.product.selected_or_first_available_variant.id}}" />                        }}"
+                        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id}}" />
                         <button type="submit" class="add-to-cart">Add To Cart</button>
                     </form>
                 </div>
