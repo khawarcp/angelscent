@@ -1,75 +1,31 @@
 <section class="featured-products">
         <div class="container">
-            <h2>Featured Products</h2>
+            <h2> {{ section.settinsg.featured_title }} </h2>
             <div class="row">
+                {% for block in section.blocks %}
+                {% assign product = all_products[block.settings.featured_product] %}
                 <div class="col-md-3">
                     <div class="featured-product-col">
                         <a href="product-detail.html" class="featured-product-img">
-                            <img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/featured-img1.png?v=1662449930" alt="">
+                            <img laoding="lazy" src="{{ product.featured_image | img_url : 'master' }}" alt="{{ product.title }}">
                         </a>
                         <div class="featured-product-text">
                             <div class="featured-title-whishlist">
-                                <h4>Gods Gifts</h4>
-                                <span><img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/heart-icon.png?v=1662535700" alt="heart-icon"></span>
+                                <h4>{{ product.title }}</h4>
+                                <span><img laoding="lazy" src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/heart-icon.png?v=1662535700" alt="heart-icon"></span>
                             </div>
                             <div class="featured-price">
-                                <h6>$100.00</h6>
-                                <h5>$111.11</h5>
+                                {% if product.compare_at_price > product.price %}
+                                     <h6> {{ product.compare_at_price }} </h6>
+                                    <h5>{{ product.price }}</h5>
+                                {% else %}
+                                     <h5>{{ product.price }}</h5>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="featured-product-col">
-                        <a href="product-detail.html" class="featured-product-img">
-                            <img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/featured-img2.png?v=1662450789" alt="">
-                        </a>
-                        <div class="featured-product-text">
-                            <div class="featured-title-whishlist">
-                                <h4>IN-LIGHT-IN</h4>
-                                <span><img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/heart-icon.png?v=1662535700" alt="heart-icon"></span>
-                            </div>
-                            <div class="featured-price">
-                                <h6>$100.00</h6>
-                                <h5>$111.11</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="featured-product-col">
-                        <a href="product-detail.html" class="featured-product-img">
-                            <img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/featured-img3.png?v=1662450803" alt="">
-                        </a>
-                        <div class="featured-product-text">
-                            <div class="featured-title-whishlist">
-                                <h4>Self-Sustained</h4>
-                                <span><img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/heart-icon.png?v=1662535700" alt="heart-icon"></span>
-                            </div>
-                            <div class="featured-price">
-                                <h6>$100.00</h6>
-                                <h5>$111.11</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="featured-product-col">
-                        <a href="product-detail.html" class="featured-product-img">
-                            <img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/featured-img4.png?v=1662450817" alt="">
-                        </a>
-                        <div class="featured-product-text">
-                            <div class="featured-title-whishlist">
-                                <h4>IN-LIGHT-IN</h4>
-                                <span><img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/heart-icon.png?v=1662535700" alt="heart-icon"></span>
-                            </div>
-                            <div class="featured-price">
-                                <h6>$100.00</h6>
-                                <h5>$111.11</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -84,6 +40,22 @@
         "id":"featured_title",
         "label":"Title"
       }
+    ],
+    "blocks":
+    [
+        {
+            "name" : "Product",
+            "type": "product",
+            "limit": 4,
+            "settings":
+            [   
+               {
+                "type": "product",
+                "id": "featured_product",
+                "label": "Product"        
+               }
+            ]
+        }
     ],
     "presets":[
       {
