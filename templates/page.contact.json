@@ -3,6 +3,7 @@
     "banner": {
       "type": "contact-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/shop-banner.png"
       }
     },
     "form": {
