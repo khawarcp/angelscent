@@ -3,14 +3,14 @@
           <div class="row">
               <div class="col-md-6">
                   <div class="about-img">
-                      <img src="images/about-img.png" alt="about-img">
+                      <img src="{{ section.settings.image | img_url: 'master' }}" alt="about-img">
                   </div>
               </div>
               <div class="col-md-6">
                   <div class="about-text-col">
-                      <h2></h2>
-                      <p>Angelscent Candles has accepted the "calling" to becoming a constant reminder to humans, that while your busy "being" human that you are also light! Our candles provide a natural source of energy along with essentials of love and so do YOU!</p>
-                      <p>Angelscent Candles are meant to be a direct representation of us.  All of our candles come inside of a solid woodbox, which for Angelscent represents the body with the light inside, so if you haven't realized this, we want to help you find that light and help you get Lit!</p>
+                      <h2>{{ section.settings.heading }}</h2>
+                      <p>{{ section.settings.info_1 }}</p>
+                      <p>{{ section.settings.info_2  }}</p>
                   </div>
               </div>
           </div>
