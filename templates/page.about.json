@@ -14,11 +14,43 @@
       "type": "about-angelscent-candles",
       "settings": {
       }
+    },
+    "16627065667af38227": {
+      "type": "index-featured-products",
+      "blocks": {
+        "811ba581-894c-49ba-8f71-0552b054023f": {
+          "type": "product",
+          "settings": {
+            "featured_product": "gods-country"
+          }
+        },
+        "bf2186ea-1eca-4c13-899b-f2a426277229": {
+          "type": "product",
+          "settings": {
+            "featured_product": "in-light-in"
+          }
+        },
+        "f6790ff1-063b-4a41-8887-d5c750da90fd": {
+          "type": "product",
+          "settings": {
+            "featured_product": "little-blessings"
+          }
+        }
+      },
+      "block_order": [
+        "811ba581-894c-49ba-8f71-0552b054023f",
+        "bf2186ea-1eca-4c13-899b-f2a426277229",
+        "f6790ff1-063b-4a41-8887-d5c750da90fd"
+      ],
+      "settings": {
+        "featured_title": "Our Featured Products"
+      }
     }
   },
   "order": [
     "banner",
     "angelscent",
-    "candles"
+    "candles",
+    "16627065667af38227"
   ]
 }
