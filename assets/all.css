@@ -1900,7 +1900,12 @@ body.gradient.list-collections.swym-ready {
 .product-media-modal[open] {
     z-index: 999999;
 }
-
+.global-media-settings {
+    background-color: transparent;
+} 
+.global-media-settings {
+    background-color: transparent;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
