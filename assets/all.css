@@ -546,6 +546,7 @@ footer .col-md-8 .row:first-child {
     letter-spacing: -0.02em;
     border-top: 1px solid rgb(63 106 126 / 20%);
     padding: 10px 0px;
+    opacity:0.30;
 }
 
 .copywrite-text {
