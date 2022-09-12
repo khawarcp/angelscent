@@ -1932,6 +1932,13 @@ a.featured-product-img img {
 .home-banner.shop-banner {
     min-height: 550px;
     height: 550px;
+}
+.featured-product-img {
+    display: block;
+}
+
+div#shopify-section-template--16427361435869__16627065667af38227 .featured-products .container {
+    max-width: 720px;
 }  
 }
 @media screen and (max-width:767px){
