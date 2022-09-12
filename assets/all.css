@@ -1155,6 +1155,11 @@ ul.find-us > a {
 .featured-products {
     text-align: center;
 }
+.empty-div {
+    height: 105px;
+    display: block;
+  width:100%;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
