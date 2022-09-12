@@ -26,6 +26,12 @@
             "custom_liquid": "<p>{{ product.metafields.custom.short_description }}<\/p>"
           }
         },
+        "4ea50bd0-c80a-44d1-9bc4-5b9b6f565dfa": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"availability-stock\"> \n<h4>Availability:<\/h4> \n{% if product.available %}<span>In Stock<\/span> \n{% else %}\n<span>Out of Stock Stock<\/span> \n{% endif %}\n<\/div>"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -49,6 +55,7 @@
         "caption",
         "price",
         "f70105b0-752b-4bce-b500-5c04109c5619",
+        "4ea50bd0-c80a-44d1-9bc4-5b9b6f565dfa",
         "variant_picker",
         "quantity_selector",
         "buy_buttons"
