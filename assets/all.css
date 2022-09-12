@@ -1211,7 +1211,14 @@ cart-drawer.drawer {
 .input-news input::placeholder {
     color: rgb(255 255 255 / 20%) !important;
 }
+ul.find-us li span {
+    font-size: 14px;
+}
 
+.input-container textarea, .input-container input {
+    font-size: 14px;
+    color: #fff;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
