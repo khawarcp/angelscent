@@ -102,6 +102,7 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
+        "enable_quick_add": true,
         "padding_top": 36,
         "padding_bottom": 28
       }
