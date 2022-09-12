@@ -1643,6 +1643,21 @@ label.field__label {
 .search__button .icon {
     color: #fff;
 }
+.facets__summary span {
+    color: #fff;
+}
+
+summary.facets__summary.caption-large.focus-offset svg path {
+    fill: #fff;
+}
+
+body.gradient.search.swym-ready {
+    color: #fff !important;
+}
+
+select#SortBy {
+    color: #fff;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
