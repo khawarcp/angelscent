@@ -1813,9 +1813,7 @@ cart-remove-button .icon-remove path {
     fill: #fff;
 }
 
-table.cart-items {
-    color: #fff !important;
-}
+
 
 p.totals__subtotal-value {
     color: #fff;
@@ -1864,7 +1862,13 @@ button#checkout:hover {
     color: #fff!important;
     -webkit-text-fill-color: #fff;
 }
+cart-drawer.drawer.animate.active .cart-drawer .cart-items th {
+    color: #000;
+}
 
+cart-remove-button .icon-remove path {
+    fill: #000 !important;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
