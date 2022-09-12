@@ -2095,7 +2095,9 @@ section.home-banner {
     width: 30%;
     max-width: 30%;
 }
-  
+.template-search.template-search--empty.section-template--16427278860509__main-padding {
+    height: 32vh;
+}  
 }
 @media screen and (max-width:767px){
     .h1, h1 {
