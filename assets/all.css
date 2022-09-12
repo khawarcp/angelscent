@@ -1616,6 +1616,9 @@ form#customer_login button {
 .logo-text-col p {
     max-width: 320px;
 }
+.col-md-8.col-lg-6.f-newsletter-col {
+    padding-top: 0px;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
