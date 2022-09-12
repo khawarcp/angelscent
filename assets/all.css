@@ -2393,5 +2393,8 @@ ul.collection-list.grid.grid--3-col-desktop.grid--2-col-tablet-down {
 
 .product-media-modal[open] {
     z-index: 999999 !important;
+}
+.header-row {
+    border: 0px;
 }  
 }
