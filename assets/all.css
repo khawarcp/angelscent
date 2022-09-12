@@ -1467,6 +1467,20 @@ button.swym-button.disabled, button.swym-button:disabled {
 .cart-count-bubble {
     background: #d2ab67;
 }
+h2#verticalTitle {
+    font-size: 18px;
+}
+
+.facet-filters__field {
+}
+
+h2.facet-filters__label.caption-large.text-body label {
+    font-size: 18px;
+}
+
+span#ProductCountDesktop {
+    font-size: 18px;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
