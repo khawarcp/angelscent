@@ -2311,5 +2311,8 @@ ul#product-grid li {
 }
 .home-banner.shop-banner .home-text h2 {
     font-size: 30px;
+}
+.product-navs-col ul li:last-child button {
+    padding-left: 0px;
 }  
 }
