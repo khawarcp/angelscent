@@ -1813,7 +1813,9 @@ cart-remove-button .icon-remove path {
     fill: #fff;
 }
 
-
+form#CartDrawer-Form .product-option {
+    color: #000;
+}
 
 p.totals__subtotal-value {
     color: #fff;
@@ -1868,6 +1870,9 @@ cart-drawer.drawer.animate.active .cart-drawer .cart-items th {
 
 cart-remove-button .icon-remove path {
     fill: #000 !important;
+}
+form#CartDrawer-Form .product-option {
+    color: #000;
 }
 @media screen and (max-width:1199px){
     .home-banner {
