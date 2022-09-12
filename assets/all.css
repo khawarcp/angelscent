@@ -1315,7 +1315,6 @@ button.swym-button.swym-add-to-wishlist-view-product {
 }
 ul#product-grid {
     column-gap: 15px;
-    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
