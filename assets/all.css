@@ -1793,6 +1793,50 @@ input.shopify-challenge__button.btn {
 .card-wrapper:hover .media.media--hover-effect>img:first-child:not(:only-child) {
     display: none;
 }
+h1.title.title--primary {
+    font-size: 35px;
+    background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#d2aa60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.product-option {
+    color: #fff;
+}
+
+cart-remove-button .icon-remove path {
+    fill: #fff;
+}
+
+table.cart-items {
+    color: #fff !important;
+}
+
+p.totals__subtotal-value {
+    color: #fff;
+}
+
+small.tax-note.caption-large.rte {
+    color: #fff;
+}
+
+.cart-items thead th {
+    font-size: 14px;
+}
+
+span.price.price--end {
+    color: #fff;
+}
+
+
+table.cart-items quantity-input.quantity {
+    margin: 0;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
