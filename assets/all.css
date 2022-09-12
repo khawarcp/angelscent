@@ -1909,7 +1909,7 @@ body.gradient.list-collections.swym-ready {
 .product-media-modal[open] {
     z-index: 99999;
 }
-span.price.price--end {
+cart-drawer.drawer.animate.active span.price.price--end {
     color: #000;
 }
 @media screen and (max-width:1199px){
