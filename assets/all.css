@@ -1928,6 +1928,10 @@ a.featured-product-img img {
 
 .card__inner.color-background-2.gradient.ratio {
     height: 230px;
+}
+.home-banner.shop-banner {
+    min-height: 550px;
+    height: 550px;
 }  
 }
 @media screen and (max-width:767px){
