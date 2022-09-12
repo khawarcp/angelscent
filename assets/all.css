@@ -1877,7 +1877,16 @@ form#CartDrawer-Form .product-option {
 div#main-cart-items table {
     color: #fff;
 }
+section.product-tabs-video-sec {
+    padding: 60px 0px;
+}
 
+.product-navs-col .tab-content p {
+    margin-bottom: 25px;
+}
+section.product-tabs-video-sec {
+    padding: 60px 0px !important;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
