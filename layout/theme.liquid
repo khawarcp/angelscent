@@ -224,7 +224,7 @@
     <link href="{{ 'all.css' | asset_url }}" rel="stylesheet">
   {% render 'wishlisthero-styles.liquid' %}</head>
 
-  <body class="gradient {{ request.page_type | handle }} {{ template }}">
+  <body class="gradient {{ request.page_type | handle }} {{ template | handle }}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
