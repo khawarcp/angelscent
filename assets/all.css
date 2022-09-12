@@ -1897,6 +1897,9 @@ body.gradient.list-collections.swym-ready {
 .page-width {
     padding: 0px 40px;
 }
+.product-media-modal[open] {
+    z-index: 999999;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
