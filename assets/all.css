@@ -1219,6 +1219,9 @@ ul.find-us li span {
     font-size: 14px;
     color: #fff;
 }
+section.home-banner.shop-banner::before {
+    opacity: 0;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
