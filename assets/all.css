@@ -1611,7 +1611,9 @@ form#customer_login button {
 .cart-drawer__empty-content a.button:hover {
     color: #fff;
 }
-
+.cart-drawer__empty-content a:hover {
+    color: #fff;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
