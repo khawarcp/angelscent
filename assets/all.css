@@ -2172,4 +2172,7 @@ ul#product-grid li {
     height: 500px;
     min-height: 500px;
 }
+.home-banner.shop-banner .home-text h2 {
+    font-size: 30px;
+}  
 }
