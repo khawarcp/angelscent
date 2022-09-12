@@ -2,6 +2,10 @@ $(".menu-bar").click(function () {
   $(".header-row").slideToggle();
   $("body").toggleClass("menu-intro");
 });
+$(".menu-intro").click(function () {
+  $(".header-row").slideToggle();
+  $("body").toggleClass("menu-intro");
+});
 jQuery(document).ready(($) => {
   $('.quantity-box').on('click', '.plus', function (e) {
     let $input = $(this).prev('input');
