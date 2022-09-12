@@ -9,47 +9,60 @@
                                 data-bs-target="#pills-description" type="button" role="tab"
                                 aria-controls="pills-description" aria-selected="true">Description</button>
                         </li>
+                      {% if pages.product-faqs.content != blank %}
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-features-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-features" type="button" role="tab" aria-controls="pills-features"
                                 aria-selected="false">Features</button>
                         </li>
+                      {% endif %}
+                      {% if pages.product-faqs.content != blank %}
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-speecs-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-speecs" type="button" role="tab" aria-controls="pills-speecs"
                                 aria-selected="false">Speecs</button>
                         </li>
+                      {% endif %}
+                      {% if pages.product-faqs.content != blank %}
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-faq-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-faq" type="button" role="tab" aria-controls="pills-faq"
                                 aria-selected="false">FAQ</button>
                         </li>
+                      {% endif %}
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-description" role="tabpanel"
                             aria-labelledby="pills-description-tab" tabindex="0">
                                 {{ product.description }}                          
                         </div>
+                        {% if product.metafields.custom.features != blank %}
                         <div class="tab-pane fade" id="pills-features" role="tabpanel"
                             aria-labelledby="pills-features-tab" tabindex="0">
-
                           {{ product.metafields.custom.features }}
                         </div>
+                      {% endif %}
+                        {% if product.metafields.custom.specs_description != blank and product.metafields.custom.specs_list != blank %}
                         <div class="tab-pane fade" id="pills-speecs" role="tabpanel" aria-labelledby="pills-speecs-tab"
                             tabindex="0">
                             {{ product.metafields.custom.specs_description }}
+                          {% if product.metafields.custom.specs_list != blank %}
                             <ul class="speecs-list">
                               {% for val in product.metafields.custom.specs_list.value %}
                                 <li> {{ val }} </li>
                               {% endfor %}
                             </ul>
-                        </div>
+                            {% endif %}
+                        </div> 
+                      {% endif %}
+                      {% if pages.product-faqs.content != blank %}
                         <div class="tab-pane fade" id="pills-faq" role="tabpanel" aria-labelledby="pills-faq-tab"
                             tabindex="0">
                             <div class="product-faqs">
                                 {{ pages.product-faqs.content }}
                             </div>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
