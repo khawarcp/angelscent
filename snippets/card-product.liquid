@@ -90,8 +90,9 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>  
-  <div class="swym-wishlist-button-bar"></div>
-             {% include 'swym-product-view', product: card_product %}<button data-swaction="addToWishlist" data-product-id="{{card_product.id | json}}"></button>
+ <!-- Swym Wishlist Plus EPI Button-->
+  <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{card_product.id}}" data-swaction="addToWishlist" data-product-id="{{card_product.id | json}}" data-variant-id="{{card_product.variants[0].id}}" data-product-url="{{ shop.url }}{{ card_product.url }}"></button>
+  <!-- Swym Wishlist Plus EPI Button-->
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
