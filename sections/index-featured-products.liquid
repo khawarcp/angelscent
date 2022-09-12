@@ -12,7 +12,12 @@
                         <div class="featured-product-text">
                             <div class="featured-title-whishlist">
                                 <h4>{{ product.title }}</h4>
-                                <span><img laoding="lazy" src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/heart-icon.png?v=1662535700" alt="heart-icon"></span>
+                                <span>
+                                  <img laoding="lazy" src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/heart-icon.png?v=1662535700" alt="heart-icon">
+                                               <!-- Swym Wishlist Plus EPI Button-->
+  <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}" data-swaction="addToWishlist" data-product-id="{{product.id | json}}" data-variant-id="{{product.variants[0].id}}" data-product-url="{{ shop.url }}{{ product.url }}"></button>
+  <!-- Swym Wishlist Plus EPI Button-->
+                                </span>
                             </div>
                             <div class="featured-price">
                                 {% if product.compare_at_price > product.price %}
