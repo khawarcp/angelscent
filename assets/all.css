@@ -1325,6 +1325,42 @@ ul#product-grid li {
 s.price-item.price-item--regular {
     font-size: 14px;
 }
+.product__media-toggle:after {
+    display: none;
+}
+
+.global-media-settings {
+    border: 0px;
+}
+
+.product__title h1 {
+    font-size: 35px;
+    background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#d2aa60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 600;
+    display: inline-block;
+}
+
+label.form__label {
+    color: #fff;
+}
+
+.product-navs-col ul li button {
+    font-size: 18px;
+}
+
+.thumbnail.global-media-settings img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+section.product-tabs-video-sec {
+    padding: 60px 0px;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
