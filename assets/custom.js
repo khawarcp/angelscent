@@ -1,6 +1,6 @@
 $(".menu-bar").click(function () {
   $(".header-row").slideToggle();
-  $("body").addClass("menu-intro");
+  // $("body").addClass("menu-intro");
 });
 // $(".menu-intro").click(function () {
 //   $(".header-row").slideToggle();
