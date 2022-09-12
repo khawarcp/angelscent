@@ -1310,7 +1310,7 @@ button.swym-button.swym-add-to-wishlist-view-product {
     color: #fff;
 }
 
-.price--on-sale .price-item--regular {
+.price-item.price-item--regular {
     color: rgb(255 255 255 / 50%) !important;
 }
 @media screen and (max-width:1199px){
