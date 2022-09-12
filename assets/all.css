@@ -1454,6 +1454,9 @@ button.quantity__button.no-js-hidden[name="plus"] {
 quantity-input.quantity {
     margin: 20px 0px;
 }
+button.swym-button.disabled, button.swym-button:disabled {
+    opacity: 1;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
