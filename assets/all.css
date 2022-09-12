@@ -1939,6 +1939,13 @@ a.featured-product-img img {
 
 div#shopify-section-template--16427361435869__16627065667af38227 .featured-products .container {
     max-width: 720px;
+}
+.contact-info-sec .container {
+    max-width: 720px;
+}
+
+.request-quote-col form {
+    max-width: 90%;
 }  
 }
 @media screen and (max-width:767px){
