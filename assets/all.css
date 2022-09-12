@@ -163,6 +163,7 @@ a {
     background-clip: text;
     text-fill-color: transparent;
     font-weight: 600;
+    width: fit-content;
 }
 
 .welcome-top-text p {
