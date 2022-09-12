@@ -1322,6 +1322,9 @@ ul#product-grid {
 ul#product-grid li {
     width: 30%;
 }
+s.price-item.price-item--regular {
+    font-size: 14px;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
