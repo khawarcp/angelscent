@@ -1534,6 +1534,9 @@ span#ProductCountDesktop {
     font-size: 16px;
     color: #fff;
 }
+.color-background-1.gradient {
+    background-color: #000;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
