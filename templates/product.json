@@ -23,7 +23,7 @@
         "f70105b0-752b-4bce-b500-5c04109c5619": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p>{{ product.metafields.custom.short_description }}<\/p>"
+            "custom_liquid": "<p class=\"product-text-para\">{{ product.metafields.custom.short_description }}<\/p>"
           }
         },
         "4ea50bd0-c80a-44d1-9bc4-5b9b6f565dfa": {
