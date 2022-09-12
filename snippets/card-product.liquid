@@ -79,7 +79,8 @@
                   width="{{ card_product.media[1].width }}"
                   height="{{ card_product.media[1].height }}"
                 >
-              {%- endif -%}           
+              {%- endif -%} 
+          {% render 'wishlisthero-collection-product' with product: card_product %}
             </div>         
           </div>
         {%- endif -%}
@@ -90,7 +91,7 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>  
-             {% render 'wishlisthero-collection-product' with product: card_product %}
+             
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
@@ -107,7 +108,6 @@
             <a href="{{ card_product.url }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
               {{ card_product.title | escape }}
             </a>
-  {% render 'wishlisthero-custom-button.liquid' %}
           </h3>
           
           <div class="card-information">
