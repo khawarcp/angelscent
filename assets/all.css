@@ -1922,6 +1922,13 @@ input.shopify-challenge__button.btn {
 a.featured-product-img img {
     height: 230px;
 }
+.media.media--transparent.media--hover-effect {
+    height: 230px;
+}
+
+.card__inner.color-background-2.gradient.ratio {
+    height: 230px;
+}  
 }
 @media screen and (max-width:767px){
     .h1, h1 {
