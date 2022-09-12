@@ -1415,6 +1415,45 @@ label.form__label {
     display: flex;
     align-items: center;
 }
+quantity-input.quantity {
+    background-color: #000;
+    border: 1px solid #fff;
+    width: 170px;
+}
+
+.quantity:before {
+    display: none;
+}
+
+.quantity:after {
+    display: none;
+}
+
+.quantity__button svg path {
+    fill: #fff;
+}
+
+button.quantity__button.no-js-hidden {
+    border: 1px solid #fff;
+    border: 0px;
+    /* border-right: 1px solid #fff; */
+}
+
+.quantity__input[type=number] {
+    color: #fff;
+}
+
+button.quantity__button.no-js-hidden[name="minus"] {
+    border-right: 1px solid #fff;
+}
+
+button.quantity__button.no-js-hidden[name="plus"] {
+    border-left: 1px solid #fff;
+}
+
+quantity-input.quantity {
+    margin: 20px 0px;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
