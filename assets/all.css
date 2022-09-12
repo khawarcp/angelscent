@@ -1898,7 +1898,7 @@ body.gradient.list-collections.swym-ready {
     padding: 0px 40px;
 }
 .product-media-modal[open] {
-    z-index: 999999;
+    z-index: 999999999;
 }
 .global-media-settings {
     background-color: transparent;
