@@ -2396,5 +2396,19 @@ ul.collection-list.grid.grid--3-col-desktop.grid--2-col-tablet-down {
 }
 .header-row {
     border: 0px;
+}
+.menu-intro {
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-intro::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgb(0 0 0 / 80%);
+    right: 0px;
 }  
 }
