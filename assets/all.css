@@ -2359,5 +2359,12 @@ ul.collection-list.grid.grid--3-col-desktop.grid--2-col-tablet-down {
 .card__information h3 a {
     display: flex;
     align-items: center;
+}
+.product-media-modal[open] {
+    z-index: 999999;
+}
+
+.global-media-settings {
+    background-color: transparent;
 }  
 }
