@@ -1313,6 +1313,15 @@ button.swym-button.swym-add-to-wishlist-view-product {
 .price-item.price-item--regular {
     color: rgb(255 255 255 / 50%) !important;
 }
+ul#product-grid {
+    column-gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+ul#product-grid li {
+    width: 30%;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
