@@ -2320,5 +2320,8 @@ section.product-tabs-video-sec {
 }
 section.about-us.self-sustained-main.shop-in-light-in.product-detail-shop-rows {
     padding-bottom: 0px;
+}
+.cart .custom-shopify-button {
+    width: 100%;
 }  
 }
