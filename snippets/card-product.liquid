@@ -90,6 +90,7 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>  
+  <div class="swym-wishlist-button-bar"></div>
              {% include 'swym-product-view', product: card_product %}<button data-swaction="addToWishlist" data-product-id="{{card_product.id | json}}"></button>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
