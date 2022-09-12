@@ -1874,6 +1874,9 @@ cart-remove-button .icon-remove path {
 form#CartDrawer-Form .product-option {
     color: #000;
 }
+div#main-cart-items table {
+    color: #fff;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
