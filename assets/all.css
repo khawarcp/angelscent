@@ -2169,7 +2169,7 @@ ul#product-grid li {
     width: 100%;
 }
 .home-banner.shop-banner {
-    height: 45vh;
-    min-height: 45vh;
-}  
+    height: 500px;
+    min-height: 500px;
+}
 }
