@@ -2,9 +2,9 @@ $(".menu-bar").click(function () {
   $(".header-row").slideToggle();
   $("body").toggleClass("menu-intro");
 });
-$(".menu-intro").click(function () {
+$(".menu-intro::before").click(function () {
   $(".header-row").slideToggle();
-  $(this).toggleClass("menu-intro");
+  $("body").toggleClass("menu-intro");
 });
 jQuery(document).ready(($) => {
   $('.quantity-box').on('click', '.plus', function (e) {
