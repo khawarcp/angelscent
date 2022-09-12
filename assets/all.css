@@ -1889,5 +1889,18 @@ div#shopify-section-template--16427361435869__16627065667af38227 .featured-produ
     background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#d2aa60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
     padding: 10px;
 }
-  
+.mobile-cart.d-none {
+    display: flex !important;
+    align-items: center;
+}
+
+.cart-search-icons ul {display: flex;margin-right: 15px;}
+
+.cart-search-icons {
+    display: none;
+}
+
+.mobile-cart.d-none .cart-search-icons {
+    display: block;
+}  
 }
