@@ -1,29 +1,66 @@
 <section class="about-us self-sustained-main shop-in-light-in product-detail-shop-rows">
     <div class="container">
-        {% assign products = all_products[product.metafields.custom.featured_products.value] %}
-        {% for product in products %}
         <div class="row">
             <div class="col-md-6">
                 <div class="about-img">
-                    <img src="{{ product.featured_image | img_url : "master" }}" alt="{{ product.title }}">
+                    <img src="images/inlight-in-candle.png" alt="shop-in-light-in.png">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="about-text-col">
-                    <h2><a href="{{ product.url }}">{{ product.title }}</a></h2>
+                    <h2>IN-LIGHT-IN Candle</h2>
 
-                    <p> {{ product.description | split : '.' | first }} </p>
-
+                    <p>IN-Light-IN is for those times when you want to summon the light within. When it's time for you
+                        to just be with you!</p>
                 </div>
             </div>
         </div>
-      {% endfor %}
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-img">
+                    <img src="images/features-img.png" alt="shop-in-light-in.png">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-text-col">
+                    <h2>Features</h2>
+
+                    <p>IN-Light-IN is for those times when you want to summon the light within. When it's time for you
+                        to just be with you!</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Featured Rows",
+    "settings": [],
+    "blocks":
+    [
+        {
+            "type" : "featured",
+            "name" : "Row",
+            "settings":
+            [
+                {
+                    "type" : "text",
+                    "id" : "heading",
+                    "label" : "Heading"
+                },
+                {
+                    "type" : "textarea",
+                    "id" : "info",
+                    "label" : "Description"
+                },
+                {
+                    "type" : "image_picker",
+                    "id" : "image",
+                    "label" : "Image"
+                }
+            ]
+        }
+    ]
   }
 {% endschema %}
 
