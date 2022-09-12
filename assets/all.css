@@ -1877,6 +1877,7 @@ form#CartDrawer-Form .product-option {
 div#main-cart-items table {
     color: #fff;
 }
+
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
