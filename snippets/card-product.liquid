@@ -80,7 +80,6 @@
                   height="{{ card_product.media[1].height }}"
                 >
               {%- endif -%}
-          {% render 'wishlisthero-collection-product' with product: card_product %}
             </div>
           </div>
         {%- endif -%}
@@ -91,6 +90,7 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>
+                      {% render 'wishlisthero-collection-product' with product: card_product %}
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
