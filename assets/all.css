@@ -1457,6 +1457,9 @@ quantity-input.quantity {
 button.swym-button.disabled, button.swym-button:disabled {
     opacity: 1;
 }
+.availability-stock span {
+    font-size: 18px;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
