@@ -2428,5 +2428,11 @@ ul.collection-list.grid.grid--3-col-desktop.grid--2-col-tablet-down {
     background-color: rgb(0 0 0 / 80%);
     right: 0px;
   z-index: 9999;
+}
+.right-menu ul li a, .left-menu ul li a {
+    color: #000;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px;
 }  
 }
