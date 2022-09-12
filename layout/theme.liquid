@@ -224,7 +224,7 @@
     <link href="{{ 'all.css' | asset_url }}" rel="stylesheet">
   {% render 'wishlisthero-styles.liquid' %}</head>
 
-  <body class="gradient {{ request.page_type | handle }} {{ template | handle }}">
+  <body class="gradient {{ request.page_type | handle }} {{ template.suffix | handle }}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -236,7 +236,7 @@
     {% section 'announcement-bar' %}
     {% section 'new-header' %}
 
-    {% unless template contains 'index' or template contains 'page' or template contains 'collection' %}
+    {% unless template contains 'index' or template.suffix contains 'page' or template contains 'collection' %}
     <div class="empty-div"></div>
       {% endunless %}
     
