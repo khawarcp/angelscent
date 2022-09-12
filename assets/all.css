@@ -1890,7 +1890,10 @@ section.product-tabs-video-sec {
 body.gradient.list-collections.swym-ready {
     margin-top: 90px;
 }
-
+.card__information h3 a {
+    display: flex;
+    align-items: center;
+}  
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
