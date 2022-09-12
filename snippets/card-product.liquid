@@ -89,8 +89,8 @@
               <a href="{{ card_product.url }}" id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}">
                 {{ card_product.title | escape }}
               </a>
-            </h3>
-                      {% render 'wishlisthero-collection-product' with product: card_product %}
+            </h3>  
+             {% render 'wishlisthero-collection-product' with product: card_product %}
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
