@@ -10,6 +10,7 @@ $(document).bind("click", function (e) {
   var $clicked = $(e.target);
   if (!$clicked.parents().hasClass("menu-intro"))
     $(".header-row").slideToggle();
+  $("body").removeClass("menu-intro");
 });
 jQuery(document).ready(($) => {
   $('.quantity-box').on('click', '.plus', function (e) {
