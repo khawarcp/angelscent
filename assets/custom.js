@@ -2,7 +2,7 @@ $(".menu-bar").click(function () {
   $(".header-row").slideToggle();
   $("body").addClass("menu-intro");
 });
-$(".menu-intro::before").click(function () {
+$(".menu-intro").click(function () {
   $(".header-row").slideToggle();
   $("body").removeClass("menu-intro");
 });
