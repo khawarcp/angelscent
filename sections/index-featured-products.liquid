@@ -6,7 +6,7 @@
                 {% assign product = all_products[block.settings.featured_product] %}
                 <div class="col-md-3">
                     <div class="featured-product-col">
-                        <a href="product-detail.html" class="featured-product-img">
+                        <a href="{{ product.url }}" class="featured-product-img">
                             <img laoding="lazy" src="{{ product.featured_image | img_url : 'master' }}" alt="{{ product.title }}">
                         </a>
                         <div class="featured-product-text">
