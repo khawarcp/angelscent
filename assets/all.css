@@ -1915,7 +1915,13 @@ input.shopify-challenge__button.btn {
     .product-detail-video {
         height: 340px;
     }
-  
+ a.featured-product-img img {
+    object-fit: cover;
+}
+
+a.featured-product-img img {
+    height: 230px;
+}
 }
 @media screen and (max-width:767px){
     .h1, h1 {
