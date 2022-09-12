@@ -6,14 +6,14 @@ $(".menu-bar").click(function () {
 //   $(".header-row").slideToggle();
 //   $("body").removeClass("menu-intro");
 // });
-if ($(window).width() < 767) {
-$(document).bind("click", function (e) {
-  var $clicked = $(e.target);
-  if (!$clicked.parents().hasClass("menu-intro"))
-    $(".header-row").slideUp();
-  $("body").removeClass("menu-intro");
-});
-});
+// if ($(window).width() < 767) {
+// $(document).bind("click", function (e) {
+//   var $clicked = $(e.target);
+//   if (!$clicked.parents().hasClass("menu-intro"))
+//     $(".header-row").slideUp();
+//   $("body").removeClass("menu-intro");
+// });
+// });
 jQuery(document).ready(($) => {
   $('.quantity-box').on('click', '.plus', function (e) {
     let $input = $(this).prev('input');
