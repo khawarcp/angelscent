@@ -13,7 +13,7 @@ $(document).bind("click", function (e) {
     $(".header-row").slideUp();
   $("body").removeClass("menu-intro");
 });
-}
+});
 jQuery(document).ready(($) => {
   $('.quantity-box').on('click', '.plus', function (e) {
     let $input = $(this).prev('input');
