@@ -1625,6 +1625,7 @@ form#customer_login button {
 
 .customer .field input {
     background-color: #181717;
+  color: #fff;
 }
 
 .customer .field label {
