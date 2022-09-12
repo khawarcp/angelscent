@@ -1946,6 +1946,14 @@ div#shopify-section-template--16427361435869__16627065667af38227 .featured-produ
 
 .request-quote-col form {
     max-width: 90%;
+}
+section.home-banner {
+    min-height: 500px;
+    height: 500px;
+}
+
+.home-banner-video video {
+    height: 500px;
 }  
 }
 @media screen and (max-width:767px){
