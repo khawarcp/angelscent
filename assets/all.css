@@ -1163,6 +1163,45 @@ ul.find-us > a {
 cart-drawer.drawer {
     z-index: 999999;
 }
+.logo-text-col p {
+    font-family: 'Jost', sans-serif;
+}
+
+.logo-text-col h4 {
+    font-family: 'Jost', sans-serif;
+}
+
+.quicks-link-col ul li a {
+    font-family: 'Jost', sans-serif;
+}
+
+.quicks-links li, .quicks-links li a {
+    font-family: 'Jost', sans-serif;
+}
+
+.quicks-link-col h5, .newsletter-text-social-col h5 {
+    font-family: 'Jost', sans-serif;
+}
+
+.newsletter-text-social-col p {
+    font-family: 'Jost', sans-serif;
+}
+
+.input-news input[type=submit] {
+    font-family: 'Jost', sans-serif;
+}
+
+.input-news input[type=email] {
+    font-family: 'Jost', sans-serif;
+}
+
+.quicks-links h5 {
+    font-family: 'Jost', sans-serif;
+}
+
+.copywrite-text p {
+    font-family: 'Jost', sans-serif;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
