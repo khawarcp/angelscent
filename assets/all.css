@@ -1210,9 +1210,7 @@ cart-drawer.drawer {
 .input-news input::placeholder {
     color: rgb(255 255 255 / 20%) !important;
 }
-.container {
-    padding: 0px 15px;
-}
+
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
@@ -1548,5 +1546,10 @@ section.home-banner {
     min-height: 400px;
     height: 65vh;
 }
-
+.container {
+    padding: 0px 15px;
+}
+div#shopify-section-template--16427361435869__16627065667af38227 .featured-products .container .col-md-3 {
+    width: 100%;
+}
 }
