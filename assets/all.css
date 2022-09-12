@@ -1157,7 +1157,7 @@ ul.find-us > a {
 }
 .empty-div {
     height: 105px;
-    display: block;
+    display: block !important;
   width:100%;
 }
 @media screen and (max-width:1199px){
