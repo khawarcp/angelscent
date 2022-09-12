@@ -1530,8 +1530,9 @@ span#ProductCountDesktop {
 .shopify-policy__body p a,.shopify-policy__body ul li a {
     color: #ffd991;
 }
-
-table:not([class]) td, table:not([class]) th {
+.shopify-policy__body {
+    font-size: 16px;
+    color: #fff;
 }
 @media screen and (max-width:1199px){
     .home-banner {
