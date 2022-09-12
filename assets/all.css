@@ -1202,6 +1202,14 @@ cart-drawer.drawer {
 .copywrite-text p {
     font-family: 'Jost', sans-serif;
 }
+*:focus-visible {
+    outline: 0px;
+    box-shadow: none;
+}
+
+.input-news input::placeholder {
+    color: rgb(255 255 255 / 20%) !important;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
