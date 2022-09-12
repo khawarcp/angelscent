@@ -29,7 +29,7 @@
         "4ea50bd0-c80a-44d1-9bc4-5b9b6f565dfa": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"availability-stock\"> \n<h4>Availability:<\/h4> \n{% if product.available %}<span>In Stock<\/span> \n{% else %}\n<span>Out of Stock Stock<\/span> \n{% endif %}\n<\/div>"
+            "custom_liquid": "<div class=\"availability-stock\"> \n<h4>Availability:<\/h4> \n{% if product.available %}<span>In Stock<\/span> \n{% else %}\n<span>Out of Stock<\/span> \n{% endif %}\n<\/div>"
           }
         },
         "variant_picker": {
