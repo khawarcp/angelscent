@@ -9,7 +9,7 @@ $(".menu-bar").click(function () {
 $(document).bind("click", function (e) {
   var $clicked = $(e.target);
   if (!$clicked.parents().hasClass("menu-intro"))
-    $(".header-row").slideToggle();
+    $(".header-row").slideUp();
   $("body").removeClass("menu-intro");
 });
 jQuery(document).ready(($) => {
