@@ -1464,6 +1464,9 @@ button.swym-button.disabled, button.swym-button:disabled {
     font-size: 16px;
     color: #fff;
 }
+.cart-count-bubble {
+    background: #d2ab67;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
