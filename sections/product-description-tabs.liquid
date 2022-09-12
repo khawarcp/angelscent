@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="product-detail-video" style="background-image: url('{{ product.metafields.custom.tabs_image | img_url : 'master' }}');">
+                <div class="product-detail-video" loading="lazy" style="background-image: url('{{ product.metafields.custom.tabs_image | img_url : 'master' }}');">
                     <a href="#"><img src="{{ 'video-icon.png' | asset_img_url : 'master' }}" alt="video-icon"></a>
                 </div>
             </div>
