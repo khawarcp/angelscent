@@ -14,12 +14,7 @@
               <div class="col-md-6">
                   <div class="about-text-col">
                       <h2>{{ product.title }}</h2>
-                      {% if product.compare_at_price > product.price %}
-                            <h4> {{ product.compare_at_price | money }} </h4>
-                        <h5>{{ product.price | money }}</h5>
-                    {% else %}
-                            <h4>{{ product.price | money }}</h4>
-                    {% endif %}
+                     {%- render 'price', product: product -%}
                       <p> {{ product.description | split : '.' | first }} </p>
                       <form action="/cart/add" method="post" class="shop-add-to-cart">
                         <a href="{{ product.url }}">Shop Now</a>
