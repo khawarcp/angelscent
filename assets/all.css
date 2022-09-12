@@ -2386,5 +2386,12 @@ ul.collection-list.grid.grid--3-col-desktop.grid--2-col-tablet-down {
 
 .global-media-settings {
     background-color: transparent;
+}
+.section-template--16427278729437__main-padding {
+    padding: 0px 15px;
+}
+
+.product-media-modal[open] {
+    z-index: 999999 !important;
 }  
 }
