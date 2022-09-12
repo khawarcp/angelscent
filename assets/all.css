@@ -2327,4 +2327,7 @@ section.about-us.self-sustained-main.shop-in-light-in.product-detail-shop-rows {
 .template-search__header.page-width.center {
     color: #fff;
 }  
+.title-wrapper-with-link {
+    margin-bottom: 70px;
+}  
 }
