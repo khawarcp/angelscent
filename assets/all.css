@@ -1619,6 +1619,17 @@ form#customer_login button {
 .col-md-8.col-lg-6.f-newsletter-col {
     padding-top: 0px;
 }
+.login p {
+    color: #fff;
+}
+
+.customer .field input {
+    background-color: #181717;
+}
+
+.customer .field label {
+    color: #fff;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
