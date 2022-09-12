@@ -235,6 +235,11 @@
 
     {% section 'announcement-bar' %}
     {% section 'new-header' %}
+
+    {% unless template contains 'index' or template contains 'page' or template contains 'collection' %}
+    <div class="empty-div"></div>
+      {% endunless %}
+    
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
