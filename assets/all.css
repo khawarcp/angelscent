@@ -654,6 +654,7 @@ a:-webkit-any-link:focus-visible {
 .home-banner.shop-banner .home-text h2 {
     -webkit-text-fill-color: #fff;
     margin-bottom: 20px;
+    font-size:40px;
 }
 .about-us.shop-about-us .about-text-col p {
     font-size: 14px;
