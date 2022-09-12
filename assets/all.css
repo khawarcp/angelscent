@@ -1481,6 +1481,58 @@ h2.facet-filters__label.caption-large.text-body label {
 span#ProductCountDesktop {
     font-size: 18px;
 }
+.shopify-policy__container {
+    max-width: 900px;
+    padding: 40px 0px;
+}
+
+.shopify-policy__title h1 {
+    display: inline-block;
+    font-size: 40px;
+    background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#d2aa60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.shopify-policy__body p {
+    color: #fff;
+}
+
+.shopify-policy__body h1 {
+    font-size: 35px;
+    background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#d2aa60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.shopify-policy__body ul u {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.shopify-policy__body ul li {
+    font-size: 16px;
+    color: #fff;
+}
+
+.shopify-policy__body p a,.shopify-policy__body ul li a {
+    color: #ffd991;
+}
+
+table:not([class]) td, table:not([class]) th {
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
