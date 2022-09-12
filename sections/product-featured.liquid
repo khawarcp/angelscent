@@ -1,9 +1,14 @@
 <section class="about-us self-sustained-main shop-in-light-in product-detail-shop-rows">
     <div class="container">
+      {% for block in section.blocks %}
         <div class="row">
             <div class="col-md-6">
                 <div class="about-img">
-                    <img src="images/inlight-in-candle.png" alt="shop-in-light-in.png">
+                    {% if block.settings.image != blank %}
+                    <img src="{{ block.settings.image | img_url : "master" }}" alt="{{ block.settings.image.alt }}">
+                      {% else %}
+                        {{ 'collection-1' | placeholder_svg_tag }}
+                      {% endif %}
                 </div>
             </div>
             <div class="col-md-6">
@@ -15,21 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="about-img">
-                    <img src="images/features-img.png" alt="shop-in-light-in.png">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="about-text-col">
-                    <h2>Features</h2>
-
-                    <p>IN-Light-IN is for those times when you want to summon the light within. When it's time for you
-                        to just be with you!</p>
-                </div>
-            </div>
-        </div>
+      {% endfor %}
     </div>
 </section>
 {% schema %}
