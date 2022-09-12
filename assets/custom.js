@@ -4,7 +4,7 @@ $(".menu-bar").click(function () {
 });
 $(".menu-intro::before").click(function () {
   $(".header-row").slideToggle();
-  $("body").toggleClass("menu-intro");
+  $("body").removeClass("menu-intro");
 });
 jQuery(document).ready(($) => {
   $('.quantity-box').on('click', '.plus', function (e) {
