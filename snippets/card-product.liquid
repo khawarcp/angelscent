@@ -80,8 +80,9 @@
                   height="{{ card_product.media[1].height }}"
                 >
               {%- endif -%}
-           {% render 'wishlisthero-collection-product' with product: card_product %}
+           
             </div>
+          {% render 'wishlisthero-collection-product' with product: card_product %}
           </div>
         {%- endif -%}
         <div class="card__content">
