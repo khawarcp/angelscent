@@ -1864,6 +1864,7 @@ button#checkout:hover {
     color: #fff!important;
     -webkit-text-fill-color: #fff;
 }
+
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
