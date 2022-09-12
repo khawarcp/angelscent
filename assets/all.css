@@ -754,7 +754,7 @@ section.featured-products.shop-featured-products .custom-site-btn {
 
 .input-container textarea {
     resize: none;
-    min-height: 110px;
+    height: 110px;
 }
 
 .input-submit {
