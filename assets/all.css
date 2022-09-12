@@ -2070,6 +2070,10 @@ section.home-banner {
 
 .home-banner-video video {
     height: 500px;
+}
+.grid--1-col-tablet-down .grid__item {
+    width: 30%;
+    max-width: 30%;
 }  
 }
 @media screen and (max-width:767px){
