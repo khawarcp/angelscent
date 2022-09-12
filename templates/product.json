@@ -36,6 +36,12 @@
           "settings": {
             "show_dynamic_checkout": true
           }
+        },
+        "f70105b0-752b-4bce-b500-5c04109c5619": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ product.metafields.custom.short_description }}"
+          }
         }
       },
       "block_order": [
@@ -44,7 +50,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "f70105b0-752b-4bce-b500-5c04109c5619"
       ],
       "settings": {
         "enable_sticky_info": true,
