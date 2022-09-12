@@ -633,6 +633,7 @@ a:-webkit-any-link:focus-visible {
     margin: auto;
 }
 .home-banner.shop-banner {
+    height:75vh;
     min-height: 75vh;
     position: relative;
     padding-bottom: 0px;
