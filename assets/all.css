@@ -1790,6 +1790,9 @@ input.shopify-challenge__button.btn {
 .cart .custom-shopify-button:hover {
     color: #fff;
 }
+.card-wrapper:hover .media.media--hover-effect>img:first-child:not(:only-child) {
+    display: none;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
