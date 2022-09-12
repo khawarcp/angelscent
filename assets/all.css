@@ -2329,5 +2329,8 @@ section.about-us.self-sustained-main.shop-in-light-in.product-detail-shop-rows {
 }  
 .title-wrapper-with-link {
     margin-bottom: 70px;
+}
+.request-quote-col form {
+    max-width: 100%;
 }  
 }
