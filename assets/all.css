@@ -1231,6 +1231,9 @@ section.home-banner.shop-banner::before {
 .request-quote-col form {
     max-width: 400px;
 }
+.swym-button.swym-add-to-wishlist-view-product {
+    font-size: 20px;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
