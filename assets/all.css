@@ -1661,6 +1661,7 @@ select#SortBy {
 .facet-filters__sort:focus-visible {
     box-shadow: none;
 }
+
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
