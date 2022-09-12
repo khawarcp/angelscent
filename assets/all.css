@@ -2332,5 +2332,25 @@ section.about-us.self-sustained-main.shop-in-light-in.product-detail-shop-rows {
 }
 .request-quote-col form {
     max-width: 100%;
+} 
+body.gradient.list-collections.swym-ready {
+    margin-top: 90px;
+}
+
+.grid--2-col-tablet-down .grid__item {
+    max-width: calc(100% - var(--grid-mobile-horizontal-spacing) / 2);
+    width: 100%;
+}
+
+ul.collection-list.grid.grid--3-col-desktop.grid--2-col-tablet-down {
+    flex-direction: column;
+}
+
+span.icon-wrap {
+}
+
+.card__information h3 a {
+    display: flex;
+    align-items: center;
 }  
 }
