@@ -2323,5 +2323,8 @@ section.about-us.self-sustained-main.shop-in-light-in.product-detail-shop-rows {
 }
 .cart .custom-shopify-button {
     width: 100%;
+}
+.template-search__header.page-width.center {
+    color: #fff;
 }  
 }
