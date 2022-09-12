@@ -1544,6 +1544,37 @@ h2.swym-wishlist-main-title.swym-heading.swym-heading-1.swym-is-heading {
     font-weight: 600;
     letter-spacing: 0px;
 }
+.login a {
+    color: #fff;
+}
+
+.login a:hover {
+    color: #fff;
+}
+
+h1#login {
+    font-size: 35px;
+    background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#d2aa60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 600;
+    display: inline-block;
+}
+
+form#customer_login button {
+    background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#D2AA60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
+    border: 0px;
+    padding: 10px;
+    width: 35%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
