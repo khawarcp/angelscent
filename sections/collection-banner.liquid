@@ -1,4 +1,8 @@
-  <section class="home-banner shop-banner" loading="lazyy" style="background-image: url('{{ collection.image | img_url : "master" }}')">
+{% if collection.image %}
+  <section class="home-banner shop-banner" loading="lazy" style="background-image: url('{{ collection.image | img_url : "master" }}')">
+    {% else %}
+  <section class="home-banner shop-banner" loading="lazy" style="background-image: url('{{ section.settings.background | img_url : "master" }}')">
+  {% endif %}
       <div class="container">
           <div class="home-text">
               <h2> {{ collection.title }} </h2>
@@ -12,7 +16,14 @@
 {% schema %}
   {
     "name": "Collection Banner",
-    "settings": []
+    "settings": 
+    [
+        {
+          "type" : "image_picker",
+            "id" : "background",
+            "label": "Background Image"
+        }
+    ]
   }
 {% endschema %}
 
