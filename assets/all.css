@@ -1210,6 +1210,9 @@ cart-drawer.drawer {
 .input-news input::placeholder {
     color: rgb(255 255 255 / 20%) !important;
 }
+.container {
+    padding: 0px 15px;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
