@@ -1787,7 +1787,10 @@ ul#product-grid li {
     width: 100%;
     max-width: calc(100% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
 }
-
+.predictive-search {
+    left: 0px;
+    right: 0px;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
