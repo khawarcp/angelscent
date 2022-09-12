@@ -1551,7 +1551,16 @@ h2.swym-wishlist-main-title.swym-heading.swym-heading-1.swym-is-heading {
 .login a:hover {
     color: #fff;
 }
-
+.custom-shopify-title{
+  font-size: 35px;
+    background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#d2aa60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 600;
+    display: inline-block;
+}
 h1#login {
     font-size: 35px;
     background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#d2aa60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
@@ -1562,7 +1571,7 @@ h1#login {
     font-weight: 600;
     display: inline-block;
 }
-.custom.shopify-button{
+.custom-shopify-button{
   background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#D2AA60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
     border: 0px;
     padding: 10px;
