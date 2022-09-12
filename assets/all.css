@@ -2161,5 +2161,9 @@ ul#product-grid li {
 }
 .custom-shopify-button, form#customer_login button {
     width: 100%;
+}
+.home-banner.shop-banner {
+    height: 45vh;
+    min-height: 45vh;
 }  
 }
