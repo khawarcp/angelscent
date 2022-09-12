@@ -1146,7 +1146,15 @@ a.featured-product-img img {
 ul.find-us > a {
     display: none;
 }
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.featured-products {
+    text-align: center;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
