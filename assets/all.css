@@ -1887,6 +1887,10 @@ section.product-tabs-video-sec {
 section.product-tabs-video-sec {
     padding: 60px 0px !important;
 }
+body.gradient.list-collections.swym-ready {
+    margin-top: 90px;
+}
+
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
