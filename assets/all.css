@@ -1698,7 +1698,6 @@ button.product-form__submit:hover span {
     background-clip: text;
     text-fill-color: transparent;
     font-weight: 600;
-    display: inline-block;
 }
 button.product-form__submit.button.button--full-width.button--secondary {
     padding: 0px 10px;
@@ -1763,6 +1762,23 @@ footer .col-md-8 {
 
 .about-us.self-sustained-main.shop-in-light-in .about-img img {
     height: auto;
+}
+.shopify-challenge__container .shopify-challenge__message, .shopify-challenge__container .shopify-challenge__errors {
+    color: #fff;
+}
+
+input.shopify-challenge__button.btn {
+    background: linear-gradient(71.67deg,#AB873E 4.97%,#D2AB67 20.15%,#B59250 33.43%,#FFD991 43.86%,#D2AA60 58.09%,#D2AB67 73.27%,#FFD991 86.55%,#B59250 99.83%);
+    border: 0px;
+    padding: 10px;
+    width: 35%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: .02em;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 @media screen and (max-width:1199px){
     .home-banner {
