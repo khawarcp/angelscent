@@ -1912,6 +1912,23 @@ body.gradient.list-collections.swym-ready {
 cart-drawer.drawer.animate.active span.price.price--end {
     color: #000;
 }
+.swym-button-bar.swym-wishlist-button-bar.swym-inject {
+    width: 10%;
+    margin: 0;
+}
+
+.product-form__buttons {
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+
+button.product-form__submit.button.button--full-width.button--secondary {
+    width: 40%;
+}
+
+.shopify-payment-button {
+    width: 40%;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
