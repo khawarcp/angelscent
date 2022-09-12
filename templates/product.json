@@ -64,6 +64,28 @@
     },
     "product-featured": {
       "type": "product-featured",
+      "blocks": {
+        "8d495f25-0be6-421d-9ea7-55ca2d6f6827": {
+          "type": "featured",
+          "settings": {
+            "heading": "IN-LIGHT-IN Candle",
+            "info": "IN-Light-IN is for those times when you want to summon the light within. When it's time for you\n                        to just be with you!",
+            "image": "shopify:\/\/shop_images\/inlight-in-candle.png"
+          }
+        },
+        "bacec363-bf67-4529-92f3-152bf2100e58": {
+          "type": "featured",
+          "settings": {
+            "heading": "Features",
+            "info": "IN-Light-IN is for those times when you want to summon the light within. When it's time for you\n                        to just be with you!",
+            "image": "shopify:\/\/shop_images\/features-img.png"
+          }
+        }
+      },
+      "block_order": [
+        "8d495f25-0be6-421d-9ea7-55ca2d6f6827",
+        "bacec363-bf67-4529-92f3-152bf2100e58"
+      ],
       "settings": {
       }
     },
