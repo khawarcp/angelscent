@@ -1,43 +1,23 @@
 <section class="about-us self-sustained-main shop-in-light-in product-detail-shop-rows">
     <div class="container">
+        {% assign products = all_products[product.metafields.custom.featured_products.value] %}
+        {% for product in products %}
         <div class="row">
             <div class="col-md-6">
                 <div class="about-img">
-                    <img src="images/inlight-in-candle.png" alt="shop-in-light-in.png">
+                    <img src="{{ product.featured_image | img_url : "master" }}" alt="{{ product.title }}">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="about-text-col">
-                    <h2>IN-LIGHT-IN Candle</h2>
+                    <h2><a href="{{ product.url }}">{{ product.title }}</a></h2>
 
-                    <p>IN-Light-IN is for those times when you want to summon the light within. When it's time for you
-                        to just be with you!</p>
-                    <div class="shop-add-to-cart">
-                        <a href="#">Shop Now</a>
-                        <button class="add-to-cart">Add To Cart</button>
-                    </div>
+                    <p> {{ product.description | split : '.' | first }} </p>
+
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="about-img">
-                    <img src="images/features-img.png" alt="shop-in-light-in.png">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="about-text-col">
-                    <h2>Features</h2>
-
-                    <p>IN-Light-IN is for those times when you want to summon the light within. When it's time for you
-                        to just be with you!</p>
-                    <div class="shop-add-to-cart">
-                        <a href="#">Shop Now</a>
-                        <button class="add-to-cart">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+      {% endfor %}
     </div>
 </section>
 {% schema %}
