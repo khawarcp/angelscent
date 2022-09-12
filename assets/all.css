@@ -1631,6 +1631,18 @@ form#customer_login button {
 .customer .field label {
     color: #fff;
 }
+.search__input.field__input {
+    background-color: #181717;
+    color: #fff;
+}
+
+label.field__label {
+    color: #fff;
+}
+
+.search__button .icon {
+    color: #fff;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
