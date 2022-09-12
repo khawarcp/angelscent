@@ -20,7 +20,7 @@
                     {% else %}
                             <h4>{{ product.price | money }}</h4>
                     {% endif %}
-                      <p> {{ product.description }} </p>
+                      <p> {{ product.description | split : '.' | first }} </p>
                       <form action="/cart/add" method="post" class="shop-add-to-cart">
                         <a href="{{ product.url }}">Shop Now</a>
                         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id}}" />
