@@ -1608,6 +1608,10 @@ form#customer_login button {
 .left-menu ul, .right-menu ul {
     align-items: center;
 }
+.cart-drawer__empty-content a.button:hover {
+    color: #fff;
+}
+
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
