@@ -1605,6 +1605,9 @@ form#customer_login button {
     font-weight: 600;
     display: inline-block;
 }
+.left-menu ul, .right-menu ul {
+    align-items: center;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
