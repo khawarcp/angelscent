@@ -1700,6 +1700,35 @@ button.product-form__submit:hover span {
     font-weight: 600;
     display: inline-block;
 }
+button.product-form__submit.button.button--full-width.button--secondary {
+    padding: 0px 10px;
+}
+
+.shopify-payment-button button {
+    padding: 0px 10px;
+}
+
+.product-navs-col li button {}
+
+.product-navs-col ul li button {
+    margin-bottom: 20px;
+}
+
+.product-navs-col ul li:last-child button {
+    margin-bottom: 0px;
+}
+
+section.product-tabs-video-sec {
+    padding-top: 0px;
+}
+
+.col-md-8.col-lg-6.f-newsletter-col {
+    padding-left: 8px !important;
+}
+
+footer .col-md-8 {
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
