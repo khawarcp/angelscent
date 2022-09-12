@@ -11,7 +11,7 @@
             <div class="col-md-6">
                 <div class="about-text-col">
                     <h2>{{ product.title }}</h2>
-                    {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+                    {%- render 'price', product: product -%}
                     <p> {{ product.description }} </p>
                     <form action="/cart/add" method="post" class="shop-add-to-cart">
                         <a href="{{ product.url }}">Shop Now</a>
