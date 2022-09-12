@@ -32,21 +32,16 @@
                         </div>
                         <div class="tab-pane fade" id="pills-features" role="tabpanel"
                             aria-labelledby="pills-features-tab" tabindex="0">
+
                           {{ product.metafields.custom.features }}
                         </div>
                         <div class="tab-pane fade" id="pills-speecs" role="tabpanel" aria-labelledby="pills-speecs-tab"
                             tabindex="0">
-                            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                                velit..."</p>
-                            <p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply
-                                because it is pain..."</p>
+                            {{ product.metafields.custom.specs_description }}
                             <ul class="speecs-list">
-                                <li>Lorem ipsum</li>
-                                <li>Dolor sit amet
-                                <li>Consectetur</li>
-                                <li>Adipiscing elit</li>
-                                <li>Donec non</li>
-                                <li>Turpis orci.</li>
+                              {% for val in product.metafields.custom.specs_list.value %}
+                                <li> {{ val }} </li>
+                              {% endfor %}
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="pills-faq" role="tabpanel" aria-labelledby="pills-faq-tab"
