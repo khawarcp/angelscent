@@ -2346,9 +2346,6 @@ ul.collection-list.grid.grid--3-col-desktop.grid--2-col-tablet-down {
     flex-direction: column;
 }
 
-span.icon-wrap {
-}
-
 .card__information h3 a {
     display: flex;
     align-items: center;
