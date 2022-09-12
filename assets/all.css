@@ -1783,7 +1783,13 @@ input.shopify-challenge__button.btn {
 .grid--4-col-desktop .grid__item {
     max-width: calc(32% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
 }
+.cart .custom-shopify-button {
+    width: 20%;
+}
 
+.cart .custom-shopify-button:hover {
+    color: #fff;
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
