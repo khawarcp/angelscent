@@ -1234,6 +1234,85 @@ section.home-banner.shop-banner::before {
 .swym-button.swym-add-to-wishlist-view-product {
     font-size: 20px;
 }
+.card__media img {
+    width: 100%;
+    height: 340px !important;
+    border-radius: 10px;
+    object-fit: cover !important;
+    position: relative !important;
+}
+
+.card__heading a:after {
+    display: none;
+}
+
+.card.card--standard.card--media {
+    background-color: transparent;
+}
+
+.card--media .card__inner .card__content {
+    background-color: transparent;
+}
+
+.card__media {
+    background-color: transparent;
+}
+
+.media.media--transparent.media--hover-effect {
+    background-color: transparent;
+    height: 340px;
+}
+
+.collection.page-width {
+    max-width: 1050px;
+}
+
+.card--card:after, .card--standard .card__inner:after {
+    display: none;
+}
+
+.card__inner.color-background-2.gradient.ratio {
+    background-color: transparent;
+    height: 340px;
+}
+
+.card .card__inner .card__media {
+    overflow: inherit;
+}
+
+a#CardLink-template--16427278401757__product-grid-7846224298205 {}
+
+h3#title-template--16427278401757__product-grid-7846224298205 {}
+
+.card__information h5 a {
+    color: #FFFFFF !important;
+}
+
+.card__information h3 a {
+    color: #FFFFFF;
+    font-size: 20px;
+    border: 0px;
+    text-decoration: none;
+}
+
+.card__information {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+button.swym-button.swym-add-to-wishlist-view-product {
+    font-size: 20px;
+}
+
+.price--on-sale .price__sale {
+    color: #fff;
+}
+
+.price--on-sale .price-item--regular {
+    color: rgb(255 255 255 / 50%);
+}
 @media screen and (max-width:1199px){
     .home-banner {
         min-height: 700px;
