@@ -9,18 +9,18 @@
                                 data-bs-target="#pills-description" type="button" role="tab"
                                 aria-controls="pills-description" aria-selected="true">Description</button>
                         </li>
-                      {% if pages.product-faqs.content != blank %}
+                      {% if product.metafields.custom.features != blank %}
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-features-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-features" type="button" role="tab" aria-controls="pills-features"
                                 aria-selected="false">Features</button>
                         </li>
                       {% endif %}
-                      {% if pages.product-faqs.content != blank %}
+                      {% if product.metafields.custom.specs_list != blank %}
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-speecs-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-speecs" type="button" role="tab" aria-controls="pills-speecs"
-                                aria-selected="false">Speecs</button>
+                                aria-selected="false">Specs</button>
                         </li>
                       {% endif %}
                       {% if pages.product-faqs.content != blank %}
