@@ -475,6 +475,13 @@
 
             {% include 'swym-product-view', product: product %}<button data-swaction="addToWishlist" data-product-id="{{product.id | json}}"> Add to WishList <img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/Vector_1.svg?v=1663328098" /></button>
 
+                      <style>
+                        .swym-button-bar.swym-wishlist-button-bar.swym-inject {
+    width: 10%;
+    margin: 0;
+    display: none;
+}
+                      </style>
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
