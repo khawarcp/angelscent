@@ -473,7 +473,7 @@
               </pickup-availability>
             </div>
 
-            {% include 'swym-product-view', product: product %}<button data-swaction="addToWishlist" data-product-id="{{product.id | json}}"> Add to WishList  </button>
+            {% include 'swym-product-view', product: product %}<button data-swaction="addToWishlist" data-product-id="{{product.id | json}}"> Add to WishList <img src="https://cdn.shopify.com/s/files/1/0661/8379/0813/files/Vector_1.svg?v=1663328098" /></button>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- when 'rating' -%}
