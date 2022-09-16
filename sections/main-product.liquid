@@ -473,7 +473,7 @@
               </pickup-availability>
             </div>
 
-            {% include 'swym-product-view', product: product %}<button data-swaction="addToWishlist" data-product-id="{{product.id | json}}"></button>
+            {% include 'swym-product-view', product: product %}<button data-swaction="addToWishlist" data-product-id="{{product.id | json}}"> Add to WishList  </button>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- when 'rating' -%}
