@@ -222,7 +222,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
     <link href="{{ 'all.css' | asset_url }}" rel="stylesheet">
-  {% render 'wishlisthero-styles.liquid' %}</head>
+  {% render 'wishlisthero-styles.liquid' %}{% include 'sca-quick-view-init' %}
+ </head>
 
   <body class="gradient {{ request.page_type | handle }} {{ template.suffix | handle }}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -289,5 +290,6 @@
   
 {% include 'swymSnippet' %}
 
-</body>
+{% include 'sca-quick-view-template' %} 
+ </body>
 </html>
